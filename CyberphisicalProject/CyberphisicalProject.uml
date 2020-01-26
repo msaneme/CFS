@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
   <uml:Model xmi:id="_eDbY0Bw7EeqHjPZmylpiBw" name="CyberphisicalProject">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_5UI38ECNEeqrY45JDtvTqQ">
+      <body>The  following requirement diagram is disigned with the described Functional Requirements (FR) and Non Functional Requirements (NFR) from the first deliverable.&#xD;
+For add more complexity in the requirements model, we have added more Quality attributes as NFR.</body>
+    </ownedComment>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_eNnPkBw7EeqHjPZmylpiBw">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
@@ -8,21 +12,15 @@
       <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_m9Vt4Bw9EeqHjPZmylpiBw" name="SoS">
-      <packagedElement xmi:type="uml:Class" xmi:id="_XVK0ICA4EeqZE7-41GoSEg" name="Provide a platform to manage the systems"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_owHoECA4EeqZE7-41GoSEg" name="User interface"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_ygsxUCA4EeqZE7-41GoSEg" name="Provide a Network"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_0wV4sCA4EeqZE7-41GoSEg" name="Simple and usable platform"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_1K7i8CA4EeqZE7-41GoSEg" name="provide all kind of functionalities"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="__5KAMCA4EeqZE7-41GoSEg" name="Refine7" client="_0wV4sCA4EeqZE7-41GoSEg" supplier="_owHoECA4EeqZE7-41GoSEg"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_AdSA8CA5EeqZE7-41GoSEg" name="Refine8" client="_1K7i8CA4EeqZE7-41GoSEg" supplier="_owHoECA4EeqZE7-41GoSEg"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_Cv91QCA5EeqZE7-41GoSEg" name="Ubiquitous system"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_JekbQCA5EeqZE7-41GoSEg" name="Reliability"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_SnJwYCA5EeqZE7-41GoSEg" name="Some dashboards providing knowledge"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_b5zngCA5EeqZE7-41GoSEg" name="Refine12" client="_owHoECA4EeqZE7-41GoSEg" supplier="_XVK0ICA4EeqZE7-41GoSEg"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_canOgCA5EeqZE7-41GoSEg" name="Refine13" client="_ygsxUCA4EeqZE7-41GoSEg" supplier="_XVK0ICA4EeqZE7-41GoSEg"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_c6aI4CA5EeqZE7-41GoSEg" name="Refine14" client="_Cv91QCA5EeqZE7-41GoSEg" supplier="_XVK0ICA4EeqZE7-41GoSEg"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_dgbnECA5EeqZE7-41GoSEg" name="Refine15" client="_JekbQCA5EeqZE7-41GoSEg" supplier="_XVK0ICA4EeqZE7-41GoSEg"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_eKuhQCA5EeqZE7-41GoSEg" name="Refine16" client="_SnJwYCA5EeqZE7-41GoSEg" supplier="_XVK0ICA4EeqZE7-41GoSEg"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_XVK0ICA4EeqZE7-41GoSEg" name="Gobernment requirement"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ygsxUCA4EeqZE7-41GoSEg" name="Auditability"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Cv91QCA5EeqZE7-41GoSEg" name="Interoperability"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_JekbQCA5EeqZE7-41GoSEg" name="Manageability"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_SnJwYCA5EeqZE7-41GoSEg" name="Predictability"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_canOgCA5EeqZE7-41GoSEg" name="Non-Functional Requirement 2" client="_m9Vt4Bw9EeqHjPZmylpiBw" supplier="_XVK0ICA4EeqZE7-41GoSEg"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_c6aI4CA5EeqZE7-41GoSEg" name="Non-Functional requirement 3" client="_Cv91QCA5EeqZE7-41GoSEg" supplier="_XVK0ICA4EeqZE7-41GoSEg"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_dgbnECA5EeqZE7-41GoSEg" name="Non-Functional Requirement 4" client="_JekbQCA5EeqZE7-41GoSEg" supplier="_XVK0ICA4EeqZE7-41GoSEg"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_eKuhQCA5EeqZE7-41GoSEg" name="Non-Functional Requirement 5" client="_SnJwYCA5EeqZE7-41GoSEg" supplier="_XVK0ICA4EeqZE7-41GoSEg"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_9a6xQDPCEeqjq_qXd37OBQ" name="SoS"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_CX7y8DPFEeqjq_qXd37OBQ" name="pepe"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_KUTzoDPFEeqjq_qXd37OBQ" name="juan"/>
@@ -30,7 +28,8 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_1xNGoBxEEeqHjPZmylpiBw" name="Healthcare System">
       <ownedComment xmi:type="uml:Comment" xmi:id="_9jSEoEBbEeq-pPe9F2qjUQ">
         <body>FIX THIS&#xD;
-is functional or not?</body>
+is functional or not? Busca en los quality attributes disponibles en el documento o en wikipedia!!!&#xD;
+</body>
       </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_hApVIEBcEeq-pPe9F2qjUQ">
         <body>substituted:&#xD;
@@ -54,7 +53,10 @@ AVAILABILITY</body>
 AVAILABILITY</body>
       </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_Y_Mf0EBfEeq-pPe9F2qjUQ">
-        <body>is this OK?</body>
+        <body>is this OK?&#xD;
+-hay que buscar un nombre para speed que sea un Quality Atribute y meterles a cada uno un identificador rollo NFR19&#xD;
+-relaciones diciendo que son Non Functional requirement&#xD;
+</body>
       </ownedComment>
       <packagedElement xmi:type="uml:Class" xmi:id="_11KK0BxKEeqHjPZmylpiBw" name="Provide Assistance in Fires or Emergencies"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_2SzJEBxKEeqHjPZmylpiBw" name="Accuracy and precision"/>
@@ -66,18 +68,14 @@ AVAILABILITY</body>
       <packagedElement xmi:type="uml:Class" xmi:id="_moaQgDPHEeqjq_qXd37OBQ" name="Firefighters"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_J-awIDfLEeqWVZHXsEoK-A" client="_2Oii4BxEEeqHjPZmylpiBw" supplier="_VzNDgBxFEeqHjPZmylpiBw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_2uspoBxEEeqHjPZmylpiBw" name="Police Emergency Station">
+    <packagedElement xmi:type="uml:Package" xmi:id="_2uspoBxEEeqHjPZmylpiBw" name="Police Emergency Station" visibility="package">
       <packagedElement xmi:type="uml:Class" xmi:id="_UARekBxLEeqHjPZmylpiBw" name="Detect and analyse different situations"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_UYaRwBxLEeqHjPZmylpiBw" name="Split the traffic in the accident zone"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_UshgkBxLEeqHjPZmylpiBw" name="Guarrantee the security and rights of people"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_U8UQEBxLEeqHjPZmylpiBw" name="Speed"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_qV6q4BxLEeqHjPZmylpiBw" name="Availability"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_sX-CMBxLEeqHjPZmylpiBw" name="Analyse the envolved people profiles"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_x-Y4IBxLEeqHjPZmylpiBw" name="Refine7" client="_UYaRwBxLEeqHjPZmylpiBw" supplier="_UARekBxLEeqHjPZmylpiBw"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_ysNAYBxLEeqHjPZmylpiBw" name="Refine8" client="_UshgkBxLEeqHjPZmylpiBw" supplier="_UARekBxLEeqHjPZmylpiBw"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_zNbeIBxLEeqHjPZmylpiBw" name="Refine9" client="_U8UQEBxLEeqHjPZmylpiBw" supplier="_UARekBxLEeqHjPZmylpiBw"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_z6kQ8BxLEeqHjPZmylpiBw" name="Refine10" client="_qV6q4BxLEeqHjPZmylpiBw" supplier="_UARekBxLEeqHjPZmylpiBw"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_0hTg0BxLEeqHjPZmylpiBw" name="Refine11" client="_sX-CMBxLEeqHjPZmylpiBw" supplier="_UARekBxLEeqHjPZmylpiBw"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UYaRwBxLEeqHjPZmylpiBw" name="Securability"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UshgkBxLEeqHjPZmylpiBw" name="Agility"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_U8UQEBxLEeqHjPZmylpiBw" name="Mobillity"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_x-Y4IBxLEeqHjPZmylpiBw" name="Non-Functional Requirement 1" client="_UYaRwBxLEeqHjPZmylpiBw" supplier="_UARekBxLEeqHjPZmylpiBw"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_ysNAYBxLEeqHjPZmylpiBw" name="Non-Functional Requirement 10" client="_UshgkBxLEeqHjPZmylpiBw" supplier="_UARekBxLEeqHjPZmylpiBw"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_zNbeIBxLEeqHjPZmylpiBw" name="Non-Functional Requirement 11" client="_U8UQEBxLEeqHjPZmylpiBw" supplier="_2uspoBxEEeqHjPZmylpiBw"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_pehiADPHEeqjq_qXd37OBQ" name="Police Departments"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_LTNY0DfLEeqWVZHXsEoK-A" client="_2uspoBxEEeqHjPZmylpiBw" supplier="_VzNDgBxFEeqHjPZmylpiBw"/>
     </packagedElement>
@@ -124,19 +122,17 @@ AVAILABILITY</body>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_rS7UcBxFEeqHjPZmylpiBw" name="Drones Managment System">
-      <packagedElement xmi:type="uml:Class" xmi:id="_sFMYYCA2EeqZE7-41GoSEg" name="Scalable network"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_sFMYYCA2EeqZE7-41GoSEg" name="Dron functional requirement"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_3KMW4CA2EeqZE7-41GoSEg" name="Availability"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_3oSoICA2EeqZE7-41GoSEg" name="Scalability"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_4BDtcCA2EeqZE7-41GoSEg" name="Reliability"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_9Oh34CA2EeqZE7-41GoSEg" name="Choose the closer and available drone"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_8FEgACA3EeqZE7-41GoSEg" name="Alerts of the drones status"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_GEcTMCA4EeqZE7-41GoSEg" name="Receive info from devices"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_OCnqsCA4EeqZE7-41GoSEg" name="Refine8" client="_3KMW4CA2EeqZE7-41GoSEg" supplier="_sFMYYCA2EeqZE7-41GoSEg"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_O0NfsCA4EeqZE7-41GoSEg" name="Refine9" client="_9Oh34CA2EeqZE7-41GoSEg" supplier="_sFMYYCA2EeqZE7-41GoSEg"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_PVlHYCA4EeqZE7-41GoSEg" name="Refine10" client="_3oSoICA2EeqZE7-41GoSEg" supplier="_sFMYYCA2EeqZE7-41GoSEg"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_P9teYCA4EeqZE7-41GoSEg" name="Refine11" client="_8FEgACA3EeqZE7-41GoSEg" supplier="_sFMYYCA2EeqZE7-41GoSEg"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_QlwV0CA4EeqZE7-41GoSEg" name="Refine12" client="_4BDtcCA2EeqZE7-41GoSEg" supplier="_sFMYYCA2EeqZE7-41GoSEg"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_RKpLkCA4EeqZE7-41GoSEg" name="Refine13" client="_GEcTMCA4EeqZE7-41GoSEg" supplier="_sFMYYCA2EeqZE7-41GoSEg"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_3oSoICA2EeqZE7-41GoSEg" name="Localizability"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_9Oh34CA2EeqZE7-41GoSEg" name="Adaptability"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_8FEgACA3EeqZE7-41GoSEg" name="Accuracy and precision"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_GEcTMCA4EeqZE7-41GoSEg" name="Scalability"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_OCnqsCA4EeqZE7-41GoSEg" name="Non-Functional Requirement 8" client="_3KMW4CA2EeqZE7-41GoSEg" supplier="_rS7UcBxFEeqHjPZmylpiBw"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_O0NfsCA4EeqZE7-41GoSEg" name="Non-Functional Requirement 12" client="_9Oh34CA2EeqZE7-41GoSEg" supplier="_sFMYYCA2EeqZE7-41GoSEg"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_PVlHYCA4EeqZE7-41GoSEg" name="Non-Functional Requirement 13" client="_3oSoICA2EeqZE7-41GoSEg" supplier="_sFMYYCA2EeqZE7-41GoSEg"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_P9teYCA4EeqZE7-41GoSEg" name="Non-Functional Requirement 1" client="_8FEgACA3EeqZE7-41GoSEg" supplier="_sFMYYCA2EeqZE7-41GoSEg"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_RKpLkCA4EeqZE7-41GoSEg" name="Non-Functional Requirement 6" client="_GEcTMCA4EeqZE7-41GoSEg" supplier="_sFMYYCA2EeqZE7-41GoSEg"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_G6MnwDPGEeqjq_qXd37OBQ" name="Devices"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_OnDvMDfLEeqWVZHXsEoK-A" client="_rS7UcBxFEeqHjPZmylpiBw" supplier="_m9Vt4Bw9EeqHjPZmylpiBw"/>
     </packagedElement>
@@ -262,17 +258,13 @@ AVAILABILITY</body>
   <Requirements:Refine xmi:id="_LL_lgRxLEeqHjPZmylpiBw" base_DirectedRelationship="_LL_lgBxLEeqHjPZmylpiBw" base_Abstraction="_LL_lgBxLEeqHjPZmylpiBw"/>
   <Requirements:Refine xmi:id="_M_wCIRxLEeqHjPZmylpiBw" base_DirectedRelationship="_M_wCIBxLEeqHjPZmylpiBw" base_Abstraction="_M_wCIBxLEeqHjPZmylpiBw"/>
   <Requirements:Refine xmi:id="_NpSuYRxLEeqHjPZmylpiBw" base_DirectedRelationship="_NpSuYBxLEeqHjPZmylpiBw" base_Abstraction="_NpSuYBxLEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_UARekRxLEeqHjPZmylpiBw" base_NamedElement="_UARekBxLEeqHjPZmylpiBw" base_Class="_UARekBxLEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_UYaRwRxLEeqHjPZmylpiBw" base_NamedElement="_UYaRwBxLEeqHjPZmylpiBw" base_Class="_UYaRwBxLEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_UshgkRxLEeqHjPZmylpiBw" base_NamedElement="_UshgkBxLEeqHjPZmylpiBw" base_Class="_UshgkBxLEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_U8UQERxLEeqHjPZmylpiBw" base_NamedElement="_U8UQEBxLEeqHjPZmylpiBw" base_Class="_U8UQEBxLEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_qWD00BxLEeqHjPZmylpiBw" base_NamedElement="_qV6q4BxLEeqHjPZmylpiBw" base_Class="_qV6q4BxLEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_sX-CMRxLEeqHjPZmylpiBw" base_NamedElement="_sX-CMBxLEeqHjPZmylpiBw" base_Class="_sX-CMBxLEeqHjPZmylpiBw"/>
+  <Requirements:Requirement xmi:id="_UARekRxLEeqHjPZmylpiBw" base_NamedElement="_UARekBxLEeqHjPZmylpiBw" id="FR5" text="As Emergency force I want to know all the possible information of the&#xD;&#xA;crash accident when the system order us to move at the car accident for&#xD;&#xA;ensure the security on the road, attend the injuries or put out a fire" base_Class="_UARekBxLEeqHjPZmylpiBw"/>
+  <Requirements:Requirement xmi:id="_UYaRwRxLEeqHjPZmylpiBw" base_NamedElement="_UYaRwBxLEeqHjPZmylpiBw" id="NFR1" text="The system must be secure for not compromise the injuries identity and prevent attacks or third persons in the system." base_Class="_UYaRwBxLEeqHjPZmylpiBw"/>
+  <Requirements:Requirement xmi:id="_UshgkRxLEeqHjPZmylpiBw" base_NamedElement="_UshgkBxLEeqHjPZmylpiBw" id="NFR10" text="The polices corps will need to attend the traffic accidents in a faster way, the system will have to be agile." base_Class="_UshgkBxLEeqHjPZmylpiBw"/>
+  <Requirements:Requirement xmi:id="_U8UQERxLEeqHjPZmylpiBw" base_NamedElement="_U8UQEBxLEeqHjPZmylpiBw" id="NFR9" text="The police corps are always in movement, the system will have to trace their routes. " base_Class="_U8UQEBxLEeqHjPZmylpiBw"/>
   <Requirements:Refine xmi:id="_x-Y4IRxLEeqHjPZmylpiBw" base_DirectedRelationship="_x-Y4IBxLEeqHjPZmylpiBw" base_Abstraction="_x-Y4IBxLEeqHjPZmylpiBw"/>
   <Requirements:Refine xmi:id="_ysNAYRxLEeqHjPZmylpiBw" base_DirectedRelationship="_ysNAYBxLEeqHjPZmylpiBw" base_Abstraction="_ysNAYBxLEeqHjPZmylpiBw"/>
   <Requirements:Refine xmi:id="_zNbeIRxLEeqHjPZmylpiBw" base_DirectedRelationship="_zNbeIBxLEeqHjPZmylpiBw" base_Abstraction="_zNbeIBxLEeqHjPZmylpiBw"/>
-  <Requirements:Refine xmi:id="_z6kQ8RxLEeqHjPZmylpiBw" base_DirectedRelationship="_z6kQ8BxLEeqHjPZmylpiBw" base_Abstraction="_z6kQ8BxLEeqHjPZmylpiBw"/>
-  <Requirements:Refine xmi:id="_0hTg0RxLEeqHjPZmylpiBw" base_DirectedRelationship="_0hTg0BxLEeqHjPZmylpiBw" base_Abstraction="_0hTg0BxLEeqHjPZmylpiBw"/>
   <Requirements:Requirement xmi:id="_kl0poBxNEeqHjPZmylpiBw" base_NamedElement="_kly0cBxNEeqHjPZmylpiBw" base_Class="_kly0cBxNEeqHjPZmylpiBw"/>
   <Requirements:Requirement xmi:id="_vf9b8BxNEeqHjPZmylpiBw" base_NamedElement="_vf7mwBxNEeqHjPZmylpiBw" base_Class="_vf7mwBxNEeqHjPZmylpiBw"/>
   <Requirements:Requirement xmi:id="_yFLKsBxNEeqHjPZmylpiBw" base_NamedElement="_yFJ8kBxNEeqHjPZmylpiBw" base_Class="_yFJ8kBxNEeqHjPZmylpiBw"/>
@@ -288,30 +280,22 @@ AVAILABILITY</body>
   <Requirements:Refine xmi:id="_cjuwkBxPEeqHjPZmylpiBw" base_DirectedRelationship="_cjsUUBxPEeqHjPZmylpiBw" base_Abstraction="_cjsUUBxPEeqHjPZmylpiBw"/>
   <Requirements:Requirement xmi:id="_hpLAYBxPEeqHjPZmylpiBw" base_NamedElement="_hpJLMBxPEeqHjPZmylpiBw" id="NFR7" text="The system must be secure for not compromise the injuries identity&#xD;&#xA;and prevent attacks or third persons in the system." base_Class="_hpJLMBxPEeqHjPZmylpiBw"/>
   <Requirements:Refine xmi:id="_pwhiABxPEeqHjPZmylpiBw" base_DirectedRelationship="_pweesBxPEeqHjPZmylpiBw" base_Abstraction="_pweesBxPEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_sFPbsCA2EeqZE7-41GoSEg" base_NamedElement="_sFMYYCA2EeqZE7-41GoSEg" base_Class="_sFMYYCA2EeqZE7-41GoSEg"/>
-  <Requirements:Requirement xmi:id="_3KOzICA2EeqZE7-41GoSEg" base_NamedElement="_3KMW4CA2EeqZE7-41GoSEg" base_Class="_3KMW4CA2EeqZE7-41GoSEg"/>
-  <Requirements:Requirement xmi:id="_3oVEYCA2EeqZE7-41GoSEg" base_NamedElement="_3oSoICA2EeqZE7-41GoSEg" base_Class="_3oSoICA2EeqZE7-41GoSEg"/>
-  <Requirements:Requirement xmi:id="_4BGwwCA2EeqZE7-41GoSEg" base_NamedElement="_4BDtcCA2EeqZE7-41GoSEg" base_Class="_4BDtcCA2EeqZE7-41GoSEg"/>
-  <Requirements:Requirement xmi:id="_9Ok7MCA2EeqZE7-41GoSEg" base_NamedElement="_9Oh34CA2EeqZE7-41GoSEg" base_Class="_9Oh34CA2EeqZE7-41GoSEg"/>
-  <Requirements:Requirement xmi:id="_8FG8QCA3EeqZE7-41GoSEg" base_NamedElement="_8FEgACA3EeqZE7-41GoSEg" base_Class="_8FEgACA3EeqZE7-41GoSEg"/>
-  <Requirements:Requirement xmi:id="_GEfWgCA4EeqZE7-41GoSEg" base_NamedElement="_GEcTMCA4EeqZE7-41GoSEg" base_Class="_GEcTMCA4EeqZE7-41GoSEg"/>
+  <Requirements:Requirement xmi:id="_sFPbsCA2EeqZE7-41GoSEg" base_NamedElement="_sFMYYCA2EeqZE7-41GoSEg" id="FR4" text="As Emergency operator I want to receive all the data of the car accident as possible for checking it and build an inform in order to compose the emergencies force request." base_Class="_sFMYYCA2EeqZE7-41GoSEg"/>
+  <Requirements:Requirement xmi:id="_3KOzICA2EeqZE7-41GoSEg" base_NamedElement="_3KMW4CA2EeqZE7-41GoSEg" id="NFR8" text="The drone sytem mus be available anytime." base_Class="_3KMW4CA2EeqZE7-41GoSEg"/>
+  <Requirements:Requirement xmi:id="_3oVEYCA2EeqZE7-41GoSEg" base_NamedElement="_3oSoICA2EeqZE7-41GoSEg" id="NF13" text="The drones must be localizables anytime and everywhere" base_Class="_3oSoICA2EeqZE7-41GoSEg"/>
+  <Requirements:Requirement xmi:id="_9Ok7MCA2EeqZE7-41GoSEg" base_NamedElement="_9Oh34CA2EeqZE7-41GoSEg" id="NFR12" text="The system must choose the closer and free dron from the accident area" base_Class="_9Oh34CA2EeqZE7-41GoSEg"/>
+  <Requirements:Requirement xmi:id="_8FG8QCA3EeqZE7-41GoSEg" base_NamedElement="_8FEgACA3EeqZE7-41GoSEg" id="NF1" text="The system must be exact in the accident metrics like coordinates, and the devices and emergency corps in order to act in a faster way." base_Class="_8FEgACA3EeqZE7-41GoSEg"/>
+  <Requirements:Requirement xmi:id="_GEfWgCA4EeqZE7-41GoSEg" base_NamedElement="_GEcTMCA4EeqZE7-41GoSEg" id="NFR6" text="The system has to be scalable horizontal in order to add more devices and emergencies forces." base_Class="_GEcTMCA4EeqZE7-41GoSEg"/>
   <Requirements:Refine xmi:id="_OCuYYCA4EeqZE7-41GoSEg" base_DirectedRelationship="_OCnqsCA4EeqZE7-41GoSEg" base_Abstraction="_OCnqsCA4EeqZE7-41GoSEg"/>
   <Requirements:Refine xmi:id="_O0QjACA4EeqZE7-41GoSEg" base_DirectedRelationship="_O0NfsCA4EeqZE7-41GoSEg" base_Abstraction="_O0NfsCA4EeqZE7-41GoSEg"/>
   <Requirements:Refine xmi:id="_PVoxwCA4EeqZE7-41GoSEg" base_DirectedRelationship="_PVlHYCA4EeqZE7-41GoSEg" base_Abstraction="_PVlHYCA4EeqZE7-41GoSEg"/>
   <Requirements:Refine xmi:id="_P9whsCA4EeqZE7-41GoSEg" base_DirectedRelationship="_P9teYCA4EeqZE7-41GoSEg" base_Abstraction="_P9teYCA4EeqZE7-41GoSEg"/>
-  <Requirements:Refine xmi:id="_QlyyECA4EeqZE7-41GoSEg" base_DirectedRelationship="_QlwV0CA4EeqZE7-41GoSEg" base_Abstraction="_QlwV0CA4EeqZE7-41GoSEg"/>
   <Requirements:Refine xmi:id="_RKs18CA4EeqZE7-41GoSEg" base_DirectedRelationship="_RKpLkCA4EeqZE7-41GoSEg" base_Abstraction="_RKpLkCA4EeqZE7-41GoSEg"/>
-  <Requirements:Requirement xmi:id="_XVOegCA4EeqZE7-41GoSEg" base_NamedElement="_XVK0ICA4EeqZE7-41GoSEg" id="SoS" text="System of Systems requirements&#xD;&#xA;" base_Class="_XVK0ICA4EeqZE7-41GoSEg"/>
-  <Requirements:Requirement xmi:id="_owKEUCA4EeqZE7-41GoSEg" base_NamedElement="_owHoECA4EeqZE7-41GoSEg" id="SoS1" base_Class="_owHoECA4EeqZE7-41GoSEg"/>
-  <Requirements:Requirement xmi:id="_ygvNkCA4EeqZE7-41GoSEg" base_NamedElement="_ygsxUCA4EeqZE7-41GoSEg" id="SoS2" base_Class="_ygsxUCA4EeqZE7-41GoSEg"/>
-  <Requirements:Requirement xmi:id="_0wYU8CA4EeqZE7-41GoSEg" base_NamedElement="_0wV4sCA4EeqZE7-41GoSEg" base_Class="_0wV4sCA4EeqZE7-41GoSEg"/>
-  <Requirements:Requirement xmi:id="_1K9_MCA4EeqZE7-41GoSEg" base_NamedElement="_1K7i8CA4EeqZE7-41GoSEg" base_Class="_1K7i8CA4EeqZE7-41GoSEg"/>
-  <Requirements:Refine xmi:id="__5NqkCA4EeqZE7-41GoSEg" base_DirectedRelationship="__5KAMCA4EeqZE7-41GoSEg" base_Abstraction="__5KAMCA4EeqZE7-41GoSEg"/>
-  <Requirements:Refine xmi:id="_AdVrUCA5EeqZE7-41GoSEg" base_DirectedRelationship="_AdSA8CA5EeqZE7-41GoSEg" base_Abstraction="_AdSA8CA5EeqZE7-41GoSEg"/>
-  <Requirements:Requirement xmi:id="_CwARgCA5EeqZE7-41GoSEg" base_NamedElement="_Cv91QCA5EeqZE7-41GoSEg" base_Class="_Cv91QCA5EeqZE7-41GoSEg"/>
-  <Requirements:Requirement xmi:id="_Jem3gCA5EeqZE7-41GoSEg" base_NamedElement="_JekbQCA5EeqZE7-41GoSEg" base_Class="_JekbQCA5EeqZE7-41GoSEg"/>
-  <Requirements:Requirement xmi:id="_SnMMoCA5EeqZE7-41GoSEg" base_NamedElement="_SnJwYCA5EeqZE7-41GoSEg" base_Class="_SnJwYCA5EeqZE7-41GoSEg"/>
-  <Requirements:Refine xmi:id="_b52DwCA5EeqZE7-41GoSEg" base_DirectedRelationship="_b5zngCA5EeqZE7-41GoSEg" base_Abstraction="_b5zngCA5EeqZE7-41GoSEg"/>
+  <Requirements:Requirement xmi:id="_XVOegCA4EeqZE7-41GoSEg" base_NamedElement="_XVK0ICA4EeqZE7-41GoSEg" id="FR3" text="As Government I want know the status of the road along the time when I want in data plot graphs for produce knowledge and develop politics for prevent car accidents." base_Class="_XVK0ICA4EeqZE7-41GoSEg"/>
+  <Requirements:Requirement xmi:id="_ygvNkCA4EeqZE7-41GoSEg" base_NamedElement="_ygsxUCA4EeqZE7-41GoSEg" id="NFR2" text="The system must be auditable for make studies of the accident in a year, the time response of the emergencies system once an accident occurs." base_Class="_ygsxUCA4EeqZE7-41GoSEg"/>
+  <Requirements:Requirement xmi:id="_CwARgCA5EeqZE7-41GoSEg" base_NamedElement="_Cv91QCA5EeqZE7-41GoSEg" id="NFR3" text="The System of systems must be interoperable in order to be connected with all the systems in the system." base_Class="_Cv91QCA5EeqZE7-41GoSEg"/>
+  <Requirements:Requirement xmi:id="_Jem3gCA5EeqZE7-41GoSEg" base_NamedElement="_JekbQCA5EeqZE7-41GoSEg" id="NFR4" text="The system has to be manageable in order to configure the politics of the system related with the different environments, add more devices, new emergencies forces..." base_Class="_JekbQCA5EeqZE7-41GoSEg"/>
+  <Requirements:Requirement xmi:id="_SnMMoCA5EeqZE7-41GoSEg" base_NamedElement="_SnJwYCA5EeqZE7-41GoSEg" id="NFR5" text="The system will automatize the decisions taking account the current politics in the system and the current resources (emergencies forces, devices)." base_Class="_SnJwYCA5EeqZE7-41GoSEg"/>
   <Requirements:Refine xmi:id="_capqwCA5EeqZE7-41GoSEg" base_DirectedRelationship="_canOgCA5EeqZE7-41GoSEg" base_Abstraction="_canOgCA5EeqZE7-41GoSEg"/>
   <Requirements:Refine xmi:id="_c6dzQCA5EeqZE7-41GoSEg" base_DirectedRelationship="_c6aI4CA5EeqZE7-41GoSEg" base_Abstraction="_c6aI4CA5EeqZE7-41GoSEg"/>
   <Requirements:Refine xmi:id="_dgfRcCA5EeqZE7-41GoSEg" base_DirectedRelationship="_dgbnECA5EeqZE7-41GoSEg" base_Abstraction="_dgbnECA5EeqZE7-41GoSEg"/>
