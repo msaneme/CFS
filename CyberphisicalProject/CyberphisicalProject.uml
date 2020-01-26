@@ -28,23 +28,36 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_KUTzoDPFEeqjq_qXd37OBQ" name="juan"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_1xNGoBxEEeqHjPZmylpiBw" name="Healthcare System">
-      <packagedElement xmi:type="uml:Class" xmi:id="__s6IgBxJEeqHjPZmylpiBw" name="Health assistance"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_Q7GS0BxKEeqHjPZmylpiBw" name="Availability"/>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_9jSEoEBbEeq-pPe9F2qjUQ">
+        <body>FIX THIS&#xD;
+is functional or not?</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_hApVIEBcEeq-pPe9F2qjUQ">
+        <body>substituted:&#xD;
+AVAILABILITY</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Class" xmi:id="__s6IgBxJEeqHjPZmylpiBw" name="Provide Health Assistance"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Q7GS0BxKEeqHjPZmylpiBw" name="Accuracy and precision:"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_SarPMBxKEeqHjPZmylpiBw" name="Speed"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_TxOycBxKEeqHjPZmylpiBw" name="Security"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_cbfz4BxKEeqHjPZmylpiBw" name="Qualified Assistants"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_j9QVIBxKEeqHjPZmylpiBw" name="Refine6" client="_Q7GS0BxKEeqHjPZmylpiBw" supplier="__s6IgBxJEeqHjPZmylpiBw"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_kuzt4BxKEeqHjPZmylpiBw" name="Refine7" client="_SarPMBxKEeqHjPZmylpiBw" supplier="__s6IgBxJEeqHjPZmylpiBw"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_nDKWIBxKEeqHjPZmylpiBw" name="Refine8" client="_TxOycBxKEeqHjPZmylpiBw" supplier="__s6IgBxJEeqHjPZmylpiBw"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_n6kfQBxKEeqHjPZmylpiBw" name="Refine9" client="_cbfz4BxKEeqHjPZmylpiBw" supplier="__s6IgBxJEeqHjPZmylpiBw"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_hpJLMBxPEeqHjPZmylpiBw" name="Wuarrantee the patient privacity"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_hpJLMBxPEeqHjPZmylpiBw" name="Guarantee patients privacy"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_pweesBxPEeqHjPZmylpiBw" name="Refine11" client="_hpJLMBxPEeqHjPZmylpiBw" supplier="__s6IgBxJEeqHjPZmylpiBw"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_k2lGgDPHEeqjq_qXd37OBQ" name="Ambulances"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_HEv0UDfLEeqWVZHXsEoK-A" client="_1xNGoBxEEeqHjPZmylpiBw" supplier="_VzNDgBxFEeqHjPZmylpiBw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_2Oii4BxEEeqHjPZmylpiBw" name="Fire Emergency Center">
-      <packagedElement xmi:type="uml:Class" xmi:id="_11KK0BxKEeqHjPZmylpiBw" name="Deal with the emergencies"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_2SzJEBxKEeqHjPZmylpiBw" name="Availability"/>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_ExIEAEBfEeq-pPe9F2qjUQ">
+        <body>substituted:&#xD;
+AVAILABILITY</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_Y_Mf0EBfEeq-pPe9F2qjUQ">
+        <body>is this OK?</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Class" xmi:id="_11KK0BxKEeqHjPZmylpiBw" name="Provide Assistance in Fires or Emergencies"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_2SzJEBxKEeqHjPZmylpiBw" name="Accuracy and precision"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_2oGqsBxKEeqHjPZmylpiBw" name="Speed"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_29QbUBxKEeqHjPZmylpiBw" name="Ability to adapt to different situations"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_LL_lgBxLEeqHjPZmylpiBw" name="Refine5" client="_2SzJEBxKEeqHjPZmylpiBw" supplier="_11KK0BxKEeqHjPZmylpiBw"/>
@@ -235,19 +248,17 @@
   <Requirements:Refine xmi:id="_J-TKsBxIEeqHjPZmylpiBw" base_DirectedRelationship="_J92ewBxIEeqHjPZmylpiBw" base_Abstraction="_J92ewBxIEeqHjPZmylpiBw"/>
   <Requirements:Satisfy xmi:id="_PnPwMBxIEeqHjPZmylpiBw" base_DirectedRelationship="_Pm4j0BxIEeqHjPZmylpiBw" base_Abstraction="_Pm4j0BxIEeqHjPZmylpiBw"/>
   <Requirements:Satisfy xmi:id="_QQWXkRxIEeqHjPZmylpiBw" base_DirectedRelationship="_QQWXkBxIEeqHjPZmylpiBw" base_Abstraction="_QQWXkBxIEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="__tDScBxJEeqHjPZmylpiBw" base_NamedElement="__s6IgBxJEeqHjPZmylpiBw" base_Class="__s6IgBxJEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_Q7GS0RxKEeqHjPZmylpiBw" base_NamedElement="_Q7GS0BxKEeqHjPZmylpiBw" base_Class="_Q7GS0BxKEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_SarPMRxKEeqHjPZmylpiBw" base_NamedElement="_SarPMBxKEeqHjPZmylpiBw" base_Class="_SarPMBxKEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_TxOycRxKEeqHjPZmylpiBw" base_NamedElement="_TxOycBxKEeqHjPZmylpiBw" base_Class="_TxOycBxKEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_cbpk4BxKEeqHjPZmylpiBw" base_NamedElement="_cbfz4BxKEeqHjPZmylpiBw" base_Class="_cbfz4BxKEeqHjPZmylpiBw"/>
+  <Requirements:Requirement xmi:id="__tDScBxJEeqHjPZmylpiBw" base_NamedElement="__s6IgBxJEeqHjPZmylpiBw" id="FR5" text="As Emergency force I want to know all the possible information of the&#xD;&#xA;crash accident when the system order us to move at the car accident to&#xD;&#xA;ensure health assistance on the road." base_Class="__s6IgBxJEeqHjPZmylpiBw"/>
+  <Requirements:Requirement xmi:id="_Q7GS0RxKEeqHjPZmylpiBw" base_NamedElement="_Q7GS0BxKEeqHjPZmylpiBw" id="NFR1" text="The system must be exact in the accident metrics like&#xD;&#xA;coordinates, and the devices and emergency corps in order to act in a faster way." base_Class="_Q7GS0BxKEeqHjPZmylpiBw"/>
+  <Requirements:Requirement xmi:id="_SarPMRxKEeqHjPZmylpiBw" base_NamedElement="_SarPMBxKEeqHjPZmylpiBw" id="SPEED" text="The assistance to the patient is provided in the fastest way possible." base_Class="_SarPMBxKEeqHjPZmylpiBw"/>
+  <Requirements:Requirement xmi:id="_cbpk4BxKEeqHjPZmylpiBw" base_NamedElement="_cbfz4BxKEeqHjPZmylpiBw" id="QUALIFIED" text="All the personal working on providing healthcare assistance is qualified and well trained." base_Class="_cbfz4BxKEeqHjPZmylpiBw"/>
   <Requirements:Refine xmi:id="_j9QVIRxKEeqHjPZmylpiBw" base_DirectedRelationship="_j9QVIBxKEeqHjPZmylpiBw" base_Abstraction="_j9QVIBxKEeqHjPZmylpiBw"/>
   <Requirements:Refine xmi:id="_kuzt4RxKEeqHjPZmylpiBw" base_DirectedRelationship="_kuzt4BxKEeqHjPZmylpiBw" base_Abstraction="_kuzt4BxKEeqHjPZmylpiBw"/>
-  <Requirements:Refine xmi:id="_nDKWIRxKEeqHjPZmylpiBw" base_DirectedRelationship="_nDKWIBxKEeqHjPZmylpiBw" base_Abstraction="_nDKWIBxKEeqHjPZmylpiBw"/>
   <Requirements:Refine xmi:id="_n6uQQBxKEeqHjPZmylpiBw" base_DirectedRelationship="_n6kfQBxKEeqHjPZmylpiBw" base_Abstraction="_n6kfQBxKEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_11KK0RxKEeqHjPZmylpiBw" base_NamedElement="_11KK0BxKEeqHjPZmylpiBw" base_Class="_11KK0BxKEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_2SzJERxKEeqHjPZmylpiBw" base_NamedElement="_2SzJEBxKEeqHjPZmylpiBw" base_Class="_2SzJEBxKEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_2oGqsRxKEeqHjPZmylpiBw" base_NamedElement="_2oGqsBxKEeqHjPZmylpiBw" base_Class="_2oGqsBxKEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_29aMUBxKEeqHjPZmylpiBw" base_NamedElement="_29QbUBxKEeqHjPZmylpiBw" base_Class="_29QbUBxKEeqHjPZmylpiBw"/>
+  <Requirements:Requirement xmi:id="_11KK0RxKEeqHjPZmylpiBw" base_NamedElement="_11KK0BxKEeqHjPZmylpiBw" id="FR5" text="As Emergency force I want to know all the possible information of the&#xD;&#xA;crash accident when the system order us to move at the car accident for&#xD;&#xA;ensure the security on the road, save trapped people or turn off a fire." base_Class="_11KK0BxKEeqHjPZmylpiBw"/>
+  <Requirements:Requirement xmi:id="_2SzJERxKEeqHjPZmylpiBw" base_NamedElement="_2SzJEBxKEeqHjPZmylpiBw" id="NFR1" text="The system must be exact in the accident metrics like&#xD;&#xA;coordinates, and the devices and emergency corps in order to act in a faster way." base_Class="_2SzJEBxKEeqHjPZmylpiBw"/>
+  <Requirements:Requirement xmi:id="_2oGqsRxKEeqHjPZmylpiBw" base_NamedElement="_2oGqsBxKEeqHjPZmylpiBw" id="SPEED" text="The assistance to the patient is provided in the fastest way possible." base_Class="_2oGqsBxKEeqHjPZmylpiBw"/>
+  <Requirements:Requirement xmi:id="_29aMUBxKEeqHjPZmylpiBw" base_NamedElement="_29QbUBxKEeqHjPZmylpiBw" id="ADAPT" text="This emergency unit has to be able to adapt to different kinds of emergency situations." base_Class="_29QbUBxKEeqHjPZmylpiBw"/>
   <Requirements:Refine xmi:id="_LL_lgRxLEeqHjPZmylpiBw" base_DirectedRelationship="_LL_lgBxLEeqHjPZmylpiBw" base_Abstraction="_LL_lgBxLEeqHjPZmylpiBw"/>
   <Requirements:Refine xmi:id="_M_wCIRxLEeqHjPZmylpiBw" base_DirectedRelationship="_M_wCIBxLEeqHjPZmylpiBw" base_Abstraction="_M_wCIBxLEeqHjPZmylpiBw"/>
   <Requirements:Refine xmi:id="_NpSuYRxLEeqHjPZmylpiBw" base_DirectedRelationship="_NpSuYBxLEeqHjPZmylpiBw" base_Abstraction="_NpSuYBxLEeqHjPZmylpiBw"/>
@@ -275,7 +286,7 @@
   <Requirements:Refine xmi:id="_3ai3cBxOEeqHjPZmylpiBw" base_DirectedRelationship="_3ahpUBxOEeqHjPZmylpiBw" base_Abstraction="_3ahpUBxOEeqHjPZmylpiBw"/>
   <Requirements:Refine xmi:id="_b_FLYBxPEeqHjPZmylpiBw" base_DirectedRelationship="_b_CvIBxPEeqHjPZmylpiBw" base_Abstraction="_b_CvIBxPEeqHjPZmylpiBw"/>
   <Requirements:Refine xmi:id="_cjuwkBxPEeqHjPZmylpiBw" base_DirectedRelationship="_cjsUUBxPEeqHjPZmylpiBw" base_Abstraction="_cjsUUBxPEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_hpLAYBxPEeqHjPZmylpiBw" base_NamedElement="_hpJLMBxPEeqHjPZmylpiBw" base_Class="_hpJLMBxPEeqHjPZmylpiBw"/>
+  <Requirements:Requirement xmi:id="_hpLAYBxPEeqHjPZmylpiBw" base_NamedElement="_hpJLMBxPEeqHjPZmylpiBw" id="NFR7" text="The system must be secure for not compromise the injuries identity&#xD;&#xA;and prevent attacks or third persons in the system." base_Class="_hpJLMBxPEeqHjPZmylpiBw"/>
   <Requirements:Refine xmi:id="_pwhiABxPEeqHjPZmylpiBw" base_DirectedRelationship="_pweesBxPEeqHjPZmylpiBw" base_Abstraction="_pweesBxPEeqHjPZmylpiBw"/>
   <Requirements:Requirement xmi:id="_sFPbsCA2EeqZE7-41GoSEg" base_NamedElement="_sFMYYCA2EeqZE7-41GoSEg" base_Class="_sFMYYCA2EeqZE7-41GoSEg"/>
   <Requirements:Requirement xmi:id="_3KOzICA2EeqZE7-41GoSEg" base_NamedElement="_3KMW4CA2EeqZE7-41GoSEg" base_Class="_3KMW4CA2EeqZE7-41GoSEg"/>
