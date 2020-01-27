@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
   <uml:Model xmi:id="_eDbY0Bw7EeqHjPZmylpiBw" name="CyberphisicalProject">
     <ownedComment xmi:type="uml:Comment" xmi:id="_5UI38ECNEeqrY45JDtvTqQ">
       <body>The following requirement diagram is disigned with the described Functional Requirements (FR) and Non Functional Requirements (NFR) from the first deliverable.&#xD;
@@ -44,8 +44,94 @@ AVAILABILITY</body>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_n6kfQBxKEeqHjPZmylpiBw" name="Refine9" client="_cbfz4BxKEeqHjPZmylpiBw" supplier="__s6IgBxJEeqHjPZmylpiBw"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_hpJLMBxPEeqHjPZmylpiBw" name="Guarantee patients privacy"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_pweesBxPEeqHjPZmylpiBw" name="Refine11" client="_hpJLMBxPEeqHjPZmylpiBw" supplier="__s6IgBxJEeqHjPZmylpiBw"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_k2lGgDPHEeqjq_qXd37OBQ" name="Ambulances"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_k2lGgDPHEeqjq_qXd37OBQ" name="HealthCare System">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_DHsOsEEoEeqAWvRA8Y8yfw" name="call_in" type="_DMknUEErEeqQKdZeRgYb6w" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_DxI0UEEoEeqAWvRA8Y8yfw" name="call_out" type="_DMknUEErEeqQKdZeRgYb6w" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_MPncgEEoEeqAWvRA8Y8yfw" name="Agent" type="_PECr8EEoEeqAWvRA8Y8yfw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c7BGAEEsEeqQKdZeRgYb6w" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_RBXUQEEoEeqAWvRA8Y8yfw" name="Medic" type="_PECr8EEoEeqAWvRA8Y8yfw" association="_76-2QDPHEeqjq_qXd37OBQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ivSKsEEsEeqQKdZeRgYb6w" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_XFYFIEEoEeqAWvRA8Y8yfw" name="Nurse" type="_PECr8EEoEeqAWvRA8Y8yfw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gNeVQEEsEeqQKdZeRgYb6w" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ax1v0EEoEeqAWvRA8Y8yfw" name="Healthcare_Call_Center" type="_dh3ncEEoEeqAWvRA8Y8yfw" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_eT5hUEEoEeqAWvRA8Y8yfw" name="Hospital" type="_h33XUEEoEeqAWvRA8Y8yfw" aggregation="composite">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aU2VAEEsEeqQKdZeRgYb6w" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_kK4i0EEoEeqAWvRA8Y8yfw" name="Ambulance" visibility="public" type="_mLfIoEEoEeqAWvRA8Y8yfw">
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_fwnvQEEuEeqQKdZeRgYb6w" name="Id"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_xk8M0EErEeqQKdZeRgYb6w" name="info_out" type="_-QTFIEErEeqQKdZeRgYb6w" aggregation="composite"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_FSMh8EEpEeqAWvRA8Y8yfw" name="CallIn_CallCenter">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_FSeOwEEpEeqAWvRA8Y8yfw" partWithPort="_ax1v0EEoEeqAWvRA8Y8yfw" role="_9kQl4EEoEeqAWvRA8Y8yfw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_FSe10EEpEeqAWvRA8Y8yfw" role="_DHsOsEEoEeqAWvRA8Y8yfw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_Hqen8EEpEeqAWvRA8Y8yfw" name="Connector11">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_Hqf2EEEpEeqAWvRA8Y8yfw" partWithPort="_ax1v0EEoEeqAWvRA8Y8yfw" role="__lQ0UEEoEeqAWvRA8Y8yfw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_Hqf2EUEpEeqAWvRA8Y8yfw" role="_DxI0UEEoEeqAWvRA8Y8yfw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_I-z9oEEpEeqAWvRA8Y8yfw" name="Connector12">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_I-0ksEEpEeqAWvRA8Y8yfw" partWithPort="_eT5hUEEoEeqAWvRA8Y8yfw" role="_AUeDsEEpEeqAWvRA8Y8yfw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_I-0ksUEpEeqAWvRA8Y8yfw" role="_DxI0UEEoEeqAWvRA8Y8yfw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_NWRtIEEpEeqAWvRA8Y8yfw" name="Connector13">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_NWSUMEEpEeqAWvRA8Y8yfw" role="_eT5hUEEoEeqAWvRA8Y8yfw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_NWS7QEEpEeqAWvRA8Y8yfw" role="_ax1v0EEoEeqAWvRA8Y8yfw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_QWZPMEEpEeqAWvRA8Y8yfw" name="Nurses_in_Hospitals">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_QWZ2QEEpEeqAWvRA8Y8yfw" role="_XFYFIEEoEeqAWvRA8Y8yfw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_QWZ2QUEpEeqAWvRA8Y8yfw" role="_eT5hUEEoEeqAWvRA8Y8yfw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_UO0SQEEpEeqAWvRA8Y8yfw" name="Medics_in_Hospitals">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_UO1gYEEpEeqAWvRA8Y8yfw" role="_RBXUQEEoEeqAWvRA8Y8yfw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_UO1gYUEpEeqAWvRA8Y8yfw" role="_eT5hUEEoEeqAWvRA8Y8yfw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_Vib2QEEpEeqAWvRA8Y8yfw" name="Agents_in_CallCenter">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_VicdUEEpEeqAWvRA8Y8yfw" role="_MPncgEEoEeqAWvRA8Y8yfw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_VicdUUEpEeqAWvRA8Y8yfw" role="_ax1v0EEoEeqAWvRA8Y8yfw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_dpv7oEEpEeqAWvRA8Y8yfw" name="Connector18">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_dpwisEEpEeqAWvRA8Y8yfw" role="_ax1v0EEoEeqAWvRA8Y8yfw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_dpwisUEpEeqAWvRA8Y8yfw" role="_kK4i0EEoEeqAWvRA8Y8yfw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_fVgS0EEpEeqAWvRA8Y8yfw" name="BindingConnector19">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_fVjWIEEpEeqAWvRA8Y8yfw" role="_eT5hUEEoEeqAWvRA8Y8yfw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_fVjWIUEpEeqAWvRA8Y8yfw" role="_kK4i0EEoEeqAWvRA8Y8yfw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_ZS8okEErEeqQKdZeRgYb6w" name="CallIn_Hospital">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_ZS-dwEErEeqQKdZeRgYb6w" role="_DHsOsEEoEeqAWvRA8Y8yfw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_ZS-dwUErEeqQKdZeRgYb6w" partWithPort="_eT5hUEEoEeqAWvRA8Y8yfw" role="_TnPC8EErEeqQKdZeRgYb6w"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_Pd7OwEEsEeqQKdZeRgYb6w" name="Connector21">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_Pd8c4EEsEeqQKdZeRgYb6w" partWithPort="_eT5hUEEoEeqAWvRA8Y8yfw" role="__qWBQEErEeqQKdZeRgYb6w"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_Pd8c4UEsEeqQKdZeRgYb6w" role="_xk8M0EErEeqQKdZeRgYb6w"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_Q5YgIEEsEeqQKdZeRgYb6w" name="Connector22">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_Q5ZHMEEsEeqQKdZeRgYb6w" partWithPort="_ax1v0EEoEeqAWvRA8Y8yfw" role="_M1U00EEsEeqQKdZeRgYb6w"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_Q5ZuQEEsEeqQKdZeRgYb6w" role="_xk8M0EErEeqQKdZeRgYb6w"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_s-UxkEEsEeqQKdZeRgYb6w" name="Nurses_in_Ambulances">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_s-VYoEEsEeqQKdZeRgYb6w" role="_XFYFIEEoEeqAWvRA8Y8yfw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_s-VYoUEsEeqQKdZeRgYb6w" role="_kK4i0EEoEeqAWvRA8Y8yfw"/>
+        </ownedConnector>
+      </packagedElement>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_HEv0UDfLEeqWVZHXsEoK-A" client="_1xNGoBxEEeqHjPZmylpiBw" supplier="_VzNDgBxFEeqHjPZmylpiBw"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_PECr8EEoEeqAWvRA8Y8yfw" name="healthcareStaff"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_dh3ncEEoEeqAWvRA8Y8yfw" name="CallCenter">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_9kQl4EEoEeqAWvRA8Y8yfw" name="call_in" type="_DMknUEErEeqQKdZeRgYb6w" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="__lQ0UEEoEeqAWvRA8Y8yfw" name="FullPort2" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_M1U00EEsEeqQKdZeRgYb6w" name="FullPort3" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_h33XUEEoEeqAWvRA8Y8yfw" name="SanitaryBuilding">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_AUeDsEEpEeqAWvRA8Y8yfw" name="info_out" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_TnPC8EErEeqQKdZeRgYb6w" name="call_in" type="_DMknUEErEeqQKdZeRgYb6w" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="__qWBQEErEeqQKdZeRgYb6w" name="FullPort3" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mLfIoEEoEeqAWvRA8Y8yfw" name="SanitaryVehicle"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_DMknUEErEeqQKdZeRgYb6w" name="Call"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_-QTFIEErEeqQKdZeRgYb6w" name="Telemetry"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_2Oii4BxEEeqHjPZmylpiBw" name="Fire Emergency Center">
       <ownedComment xmi:type="uml:Comment" xmi:id="_ExIEAEBfEeq-pPe9F2qjUQ">
@@ -68,7 +154,7 @@ AVAILABILITY</body>
       <packagedElement xmi:type="uml:Class" xmi:id="_moaQgDPHEeqjq_qXd37OBQ" name="Firefighters"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_J-awIDfLEeqWVZHXsEoK-A" client="_2Oii4BxEEeqHjPZmylpiBw" supplier="_VzNDgBxFEeqHjPZmylpiBw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_2uspoBxEEeqHjPZmylpiBw" name="Police Emergency Station" visibility="package">
+    <packagedElement xmi:type="uml:Package" xmi:id="_2uspoBxEEeqHjPZmylpiBw" name="Police Emergency Station" visibility="public">
       <packagedElement xmi:type="uml:Class" xmi:id="_UARekBxLEeqHjPZmylpiBw" name="Detect and analyse different situations"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_UYaRwBxLEeqHjPZmylpiBw" name="Securability"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_UshgkBxLEeqHjPZmylpiBw" name="Agility"/>
@@ -77,10 +163,9 @@ AVAILABILITY</body>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_ysNAYBxLEeqHjPZmylpiBw" name="Non-Functional Requirement 10" client="_UshgkBxLEeqHjPZmylpiBw" supplier="_UARekBxLEeqHjPZmylpiBw"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_zNbeIBxLEeqHjPZmylpiBw" name="Non-Functional Requirement 11" client="_U8UQEBxLEeqHjPZmylpiBw" supplier="_2uspoBxEEeqHjPZmylpiBw"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_pehiADPHEeqjq_qXd37OBQ" name="Police Departments"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_LTNY0DfLEeqWVZHXsEoK-A" client="_2uspoBxEEeqHjPZmylpiBw" supplier="_VzNDgBxFEeqHjPZmylpiBw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_LTNY0DfLEeqWVZHXsEoK-A" client="_2uspoBxEEeqHjPZmylpiBw" supplier="_eDbY0Bw7EeqHjPZmylpiBw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_IBGlkBxFEeqHjPZmylpiBw" name="eCall Monitoring System">
-      <elementImport xmi:type="uml:ElementImport" xmi:id="_PLg6gCA6EeqZE7-41GoSEg"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_6bO64BxGEeqHjPZmylpiBw" name="Detect an accident"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_G5ZEsBxHEeqHjPZmylpiBw" name="Accuracy and precision"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_iUB04BxHEeqHjPZmylpiBw" name="Securability" visibility="package"/>
@@ -92,20 +177,7 @@ AVAILABILITY</body>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_sdsi4EA-Eeq-pPe9F2qjUQ" client="_IBGlkBxFEeqHjPZmylpiBw" supplier="_m9Vt4Bw9EeqHjPZmylpiBw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_VzNDgBxFEeqHjPZmylpiBw" name="Government Emergency System">
-      <elementImport xmi:type="uml:ElementImport" xmi:id="_XHC0gBxGEeqHjPZmylpiBw" alias="Alerts" importedElement="_m9Vt4Bw9EeqHjPZmylpiBw"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_kly0cBxNEeqHjPZmylpiBw" name="An efficient management of the emergency entities"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_vf7mwBxNEeqHjPZmylpiBw" name="Determine the necesities for the scenario"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_yFJ8kBxNEeqHjPZmylpiBw" name="Decide the closer emergency units"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_MmnCABxOEeqHjPZmylpiBw" name="Speed"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_TZxX4BxOEeqHjPZmylpiBw" name="In case of neccesity of policemans, how many?"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_axkE0BxOEeqHjPZmylpiBw" name="CopyOf_In case of neccesity of FireFighters, how many?_5"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_cKRkMBxOEeqHjPZmylpiBw" name="CopyOf_CopyOf_In case of neccesity of ambulance, how many?_5_6"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_hs3qEBxOEeqHjPZmylpiBw" name="Refine8" client="_TZxX4BxOEeqHjPZmylpiBw" supplier="_yFJ8kBxNEeqHjPZmylpiBw"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_iWM68BxOEeqHjPZmylpiBw" name="Refine9" client="_axkE0BxOEeqHjPZmylpiBw" supplier="_yFJ8kBxNEeqHjPZmylpiBw"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_lH5mgBxOEeqHjPZmylpiBw" name="Refine10" client="_cKRkMBxOEeqHjPZmylpiBw" supplier="_yFJ8kBxNEeqHjPZmylpiBw"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_3ahpUBxOEeqHjPZmylpiBw" name="Refine15" client="_MmnCABxOEeqHjPZmylpiBw" supplier="_kly0cBxNEeqHjPZmylpiBw"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_b_CvIBxPEeqHjPZmylpiBw" name="Refine12" client="_vf7mwBxNEeqHjPZmylpiBw" supplier="_kly0cBxNEeqHjPZmylpiBw"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_cjsUUBxPEeqHjPZmylpiBw" name="Refine13" client="_yFJ8kBxNEeqHjPZmylpiBw" supplier="_vf7mwBxNEeqHjPZmylpiBw"/>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_XHC0gBxGEeqHjPZmylpiBw" alias="" importedElement="_eDbY0Bw7EeqHjPZmylpiBw"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_vAKQgDPFEeqjq_qXd37OBQ" name="Goverment">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_5iacYjPHEeqjq_qXd37OBQ" name="police departments" type="_pehiADPHEeqjq_qXd37OBQ" aggregation="composite" association="_5iZ1UDPHEeqjq_qXd37OBQ">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ibDcDPHEeqjq_qXd37OBQ"/>
@@ -115,7 +187,7 @@ AVAILABILITY</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6L2a8zPHEeqjq_qXd37OBQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6L2a9DPHEeqjq_qXd37OBQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_76_dUjPHEeqjq_qXd37OBQ" name="ambulance" type="_k2lGgDPHEeqjq_qXd37OBQ" aggregation="composite" association="_76-2QDPHEeqjq_qXd37OBQ">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_76_dUjPHEeqjq_qXd37OBQ" name="healthcare emergency services" type="_k2lGgDPHEeqjq_qXd37OBQ" aggregation="composite" association="_76-2QDPHEeqjq_qXd37OBQ">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_76_dUzPHEeqjq_qXd37OBQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_76_dVDPHEeqjq_qXd37OBQ" value="1"/>
         </ownedAttribute>
@@ -170,7 +242,7 @@ AVAILABILITY</body>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_6L2a9TPHEeqjq_qXd37OBQ" type="_vAKQgDPFEeqjq_qXd37OBQ" association="_6L1z4DPHEeqjq_qXd37OBQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_76-2QDPHEeqjq_qXd37OBQ" memberEnd="_76_dUjPHEeqjq_qXd37OBQ _76_dVTPHEeqjq_qXd37OBQ">
+    <packagedElement xmi:type="uml:Association" xmi:id="_76-2QDPHEeqjq_qXd37OBQ" memberEnd="_76_dUjPHEeqjq_qXd37OBQ _76_dVTPHEeqjq_qXd37OBQ _RBXUQEEoEeqAWvRA8Y8yfw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_76_dUDPHEeqjq_qXd37OBQ" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_76_dUTPHEeqjq_qXd37OBQ" key="nature" value="UML_Nature"/>
       </eAnnotations>
@@ -265,19 +337,6 @@ AVAILABILITY</body>
   <Requirements:Refine xmi:id="_x-Y4IRxLEeqHjPZmylpiBw" base_DirectedRelationship="_x-Y4IBxLEeqHjPZmylpiBw" base_Abstraction="_x-Y4IBxLEeqHjPZmylpiBw"/>
   <Requirements:Refine xmi:id="_ysNAYRxLEeqHjPZmylpiBw" base_DirectedRelationship="_ysNAYBxLEeqHjPZmylpiBw" base_Abstraction="_ysNAYBxLEeqHjPZmylpiBw"/>
   <Requirements:Refine xmi:id="_zNbeIRxLEeqHjPZmylpiBw" base_DirectedRelationship="_zNbeIBxLEeqHjPZmylpiBw" base_Abstraction="_zNbeIBxLEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_kl0poBxNEeqHjPZmylpiBw" base_NamedElement="_kly0cBxNEeqHjPZmylpiBw" base_Class="_kly0cBxNEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_vf9b8BxNEeqHjPZmylpiBw" base_NamedElement="_vf7mwBxNEeqHjPZmylpiBw" base_Class="_vf7mwBxNEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_yFLKsBxNEeqHjPZmylpiBw" base_NamedElement="_yFJ8kBxNEeqHjPZmylpiBw" base_Class="_yFJ8kBxNEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_MmpeQBxOEeqHjPZmylpiBw" base_NamedElement="_MmnCABxOEeqHjPZmylpiBw" base_Class="_MmnCABxOEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_TZzNEBxOEeqHjPZmylpiBw" base_NamedElement="_TZxX4BxOEeqHjPZmylpiBw" base_Class="_TZxX4BxOEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_axlS9BxOEeqHjPZmylpiBw" base_NamedElement="_axkE0BxOEeqHjPZmylpiBw" base_Class="_axkE0BxOEeqHjPZmylpiBw"/>
-  <Requirements:Requirement xmi:id="_cKSyUBxOEeqHjPZmylpiBw" base_NamedElement="_cKRkMBxOEeqHjPZmylpiBw" base_Class="_cKRkMBxOEeqHjPZmylpiBw"/>
-  <Requirements:Refine xmi:id="_hs5fQBxOEeqHjPZmylpiBw" base_DirectedRelationship="_hs3qEBxOEeqHjPZmylpiBw" base_Abstraction="_hs3qEBxOEeqHjPZmylpiBw"/>
-  <Requirements:Refine xmi:id="_iWPXMBxOEeqHjPZmylpiBw" base_DirectedRelationship="_iWM68BxOEeqHjPZmylpiBw" base_Abstraction="_iWM68BxOEeqHjPZmylpiBw"/>
-  <Requirements:Refine xmi:id="_lH7bsBxOEeqHjPZmylpiBw" base_DirectedRelationship="_lH5mgBxOEeqHjPZmylpiBw" base_Abstraction="_lH5mgBxOEeqHjPZmylpiBw"/>
-  <Requirements:Refine xmi:id="_3ai3cBxOEeqHjPZmylpiBw" base_DirectedRelationship="_3ahpUBxOEeqHjPZmylpiBw" base_Abstraction="_3ahpUBxOEeqHjPZmylpiBw"/>
-  <Requirements:Refine xmi:id="_b_FLYBxPEeqHjPZmylpiBw" base_DirectedRelationship="_b_CvIBxPEeqHjPZmylpiBw" base_Abstraction="_b_CvIBxPEeqHjPZmylpiBw"/>
-  <Requirements:Refine xmi:id="_cjuwkBxPEeqHjPZmylpiBw" base_DirectedRelationship="_cjsUUBxPEeqHjPZmylpiBw" base_Abstraction="_cjsUUBxPEeqHjPZmylpiBw"/>
   <Requirements:Requirement xmi:id="_hpLAYBxPEeqHjPZmylpiBw" base_NamedElement="_hpJLMBxPEeqHjPZmylpiBw" id="NFR7" text="The system must be secure for not compromise the injuries identity&#xD;&#xA;and prevent attacks or third persons in the system." base_Class="_hpJLMBxPEeqHjPZmylpiBw"/>
   <Requirements:Refine xmi:id="_pwhiABxPEeqHjPZmylpiBw" base_DirectedRelationship="_pweesBxPEeqHjPZmylpiBw" base_Abstraction="_pweesBxPEeqHjPZmylpiBw"/>
   <Requirements:Requirement xmi:id="_sFPbsCA2EeqZE7-41GoSEg" base_NamedElement="_sFMYYCA2EeqZE7-41GoSEg" id="FR4" text="As Emergency operator I want to receive all the data of the car accident as possible for checking it and build an inform in order to compose the emergencies force request." base_Class="_sFMYYCA2EeqZE7-41GoSEg"/>
@@ -310,4 +369,23 @@ AVAILABILITY</body>
   <Blocks:Block xmi:id="_k2oJ0DPHEeqjq_qXd37OBQ" base_Class="_k2lGgDPHEeqjq_qXd37OBQ"/>
   <Blocks:Block xmi:id="_modT0DPHEeqjq_qXd37OBQ" base_Class="_moaQgDPHEeqjq_qXd37OBQ"/>
   <Blocks:Block xmi:id="_pej-QDPHEeqjq_qXd37OBQ" base_Class="_pehiADPHEeqjq_qXd37OBQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_DIA-0EEoEeqAWvRA8Y8yfw" base_Port="_DHsOsEEoEeqAWvRA8Y8yfw"/>
+  <PortsAndFlows:ProxyPort xmi:id="_DxOT4EEoEeqAWvRA8Y8yfw" base_Port="_DxI0UEEoEeqAWvRA8Y8yfw"/>
+  <Blocks:Block xmi:id="_dh6qwEEoEeqAWvRA8Y8yfw" base_Class="_dh3ncEEoEeqAWvRA8Y8yfw"/>
+  <Blocks:Block xmi:id="_h35zkEEoEeqAWvRA8Y8yfw" base_Class="_h33XUEEoEeqAWvRA8Y8yfw"/>
+  <Blocks:Block xmi:id="_mLhk4EEoEeqAWvRA8Y8yfw" base_Class="_mLfIoEEoEeqAWvRA8Y8yfw"/>
+  <PortsAndFlows:FullPort xmi:id="_9kUQQEEoEeqAWvRA8Y8yfw" base_Port="_9kQl4EEoEeqAWvRA8Y8yfw"/>
+  <PortsAndFlows:FullPort xmi:id="__lTQkEEoEeqAWvRA8Y8yfw" base_Port="__lQ0UEEoEeqAWvRA8Y8yfw"/>
+  <PortsAndFlows:FullPort xmi:id="_AUhHAEEpEeqAWvRA8Y8yfw" base_Port="_AUeDsEEpEeqAWvRA8Y8yfw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_FSfc4EEpEeqAWvRA8Y8yfw" base_Element="_FSeOwEEpEeqAWvRA8Y8yfw" propertyPath="_ax1v0EEoEeqAWvRA8Y8yfw" base_ConnectorEnd="_FSeOwEEpEeqAWvRA8Y8yfw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_Hqf2EkEpEeqAWvRA8Y8yfw" base_Element="_Hqf2EEEpEeqAWvRA8Y8yfw" propertyPath="_ax1v0EEoEeqAWvRA8Y8yfw" base_ConnectorEnd="_Hqf2EEEpEeqAWvRA8Y8yfw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_I-0kskEpEeqAWvRA8Y8yfw" base_Element="_I-0ksEEpEeqAWvRA8Y8yfw" propertyPath="_eT5hUEEoEeqAWvRA8Y8yfw" base_ConnectorEnd="_I-0ksEEpEeqAWvRA8Y8yfw"/>
+  <Blocks:BindingConnector xmi:id="_fVjWIkEpEeqAWvRA8Y8yfw" base_Connector="_fVgS0EEpEeqAWvRA8Y8yfw"/>
+  <PortsAndFlows:FullPort xmi:id="_TnWXsEErEeqQKdZeRgYb6w" base_Port="_TnPC8EErEeqQKdZeRgYb6w"/>
+  <Blocks:NestedConnectorEnd xmi:id="_ZS_E0EErEeqQKdZeRgYb6w" base_Element="_ZS-dwUErEeqQKdZeRgYb6w" propertyPath="_eT5hUEEoEeqAWvRA8Y8yfw" base_ConnectorEnd="_ZS-dwUErEeqQKdZeRgYb6w"/>
+  <PortsAndFlows:ProxyPort xmi:id="_xk_3MEErEeqQKdZeRgYb6w" base_Port="_xk8M0EErEeqQKdZeRgYb6w"/>
+  <PortsAndFlows:FullPort xmi:id="__qZroEErEeqQKdZeRgYb6w" base_Port="__qWBQEErEeqQKdZeRgYb6w"/>
+  <PortsAndFlows:FullPort xmi:id="_M1X4IEEsEeqQKdZeRgYb6w" base_Port="_M1U00EEsEeqQKdZeRgYb6w"/>
+  <Blocks:NestedConnectorEnd xmi:id="_Pd8c4kEsEeqQKdZeRgYb6w" base_Element="_Pd8c4EEsEeqQKdZeRgYb6w" propertyPath="_eT5hUEEoEeqAWvRA8Y8yfw" base_ConnectorEnd="_Pd8c4EEsEeqQKdZeRgYb6w"/>
+  <Blocks:NestedConnectorEnd xmi:id="_Q5ZuQUEsEeqQKdZeRgYb6w" base_Element="_Q5ZHMEEsEeqQKdZeRgYb6w" propertyPath="_ax1v0EEoEeqAWvRA8Y8yfw" base_ConnectorEnd="_Q5ZHMEEsEeqQKdZeRgYb6w"/>
 </xmi:XMI>
