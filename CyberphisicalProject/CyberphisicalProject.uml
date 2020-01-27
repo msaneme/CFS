@@ -2,8 +2,8 @@
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
   <uml:Model xmi:id="_eDbY0Bw7EeqHjPZmylpiBw" name="CyberphisicalProject">
     <ownedComment xmi:type="uml:Comment" xmi:id="_5UI38ECNEeqrY45JDtvTqQ">
-      <body>The  following requirement diagram is disigned with the described Functional Requirements (FR) and Non Functional Requirements (NFR) from the first deliverable.&#xD;
-For add more complexity in the requirements model, we have added more Quality attributes as NFR.</body>
+      <body>The following requirement diagram is disigned with the described Functional Requirements (FR) and Non Functional Requirements (NFR) from the first deliverable.&#xD;
+For adding more complexity in the requirements model, we have added more Quality attributes as NFR.</body>
     </ownedComment>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_eNnPkBw7EeqHjPZmylpiBw">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
