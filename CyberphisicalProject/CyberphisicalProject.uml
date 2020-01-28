@@ -261,7 +261,99 @@ NFR13 = ADAPTATION</body>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_Pm4j0BxIEeqHjPZmylpiBw" name="Non-Functional Requirement 7" client="_iUB04BxHEeqHjPZmylpiBw" supplier="_6bO64BxGEeqHjPZmylpiBw"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_QQWXkBxIEeqHjPZmylpiBw" name="Non-Functional Requirement 6" client="_4MShoBxHEeqHjPZmylpiBw" supplier="_6bO64BxGEeqHjPZmylpiBw"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_sdsi4EA-Eeq-pPe9F2qjUQ" client="_IBGlkBxFEeqHjPZmylpiBw" supplier="_m9Vt4Bw9EeqHjPZmylpiBw"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_Uec9kEHVEeq8GeHOlm902Q" name="eCall emergency system"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Uec9kEHVEeq8GeHOlm902Q" name="eCall emergency system">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_iEgYMEIEEeqL4KWraaLQJg" name="EmergencySystem" type="_9a6xQDPCEeqjq_qXd37OBQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Yt-tsEIEEeqL4KWraaLQJg" name="eCall control center" type="_0ccnkEH-EeqWUJkOGHKGrQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ZXQUMEIEEeqL4KWraaLQJg" name="black boxes" type="_225QwEH-EeqWUJkOGHKGrQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40vOwEIEEeqL4KWraaLQJg" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_aFkLsEIEEeqL4KWraaLQJg" name="global navigation satellite system" type="_4kfbAEH-EeqWUJkOGHKGrQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5e0tkEIEEeqL4KWraaLQJg" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_a_8JQEIEEeqL4KWraaLQJg" name="filter" type="_8RAzQEICEeqL4KWraaLQJg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A7bpEEIFEeqL4KWraaLQJg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A7f6gEIFEeqL4KWraaLQJg" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_b6nBwEIEEeqL4KWraaLQJg" name="dashboard" type="_8RAzQEICEeqL4KWraaLQJg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__GrG4EIEEeqL4KWraaLQJg" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_cc8SwEIEEeqL4KWraaLQJg" name="dataBase" type="_8RAzQEICEeqL4KWraaLQJg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7qrhIEIEEeqL4KWraaLQJg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7qwZoEIEEeqL4KWraaLQJg" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_c5ZlQEIEEeqL4KWraaLQJg" name="eCallControlCenterStaff" type="_ys7N4EICEeqL4KWraaLQJg"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_amqRIEIFEeqL4KWraaLQJg" type="_TF5dIEH_EeqWUJkOGHKGrQ"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_bd4NAEIFEeqL4KWraaLQJg" type="_XgOTYEH_EeqWUJkOGHKGrQ"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_s7kBUEIEEeqL4KWraaLQJg" name="Connector10">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_s7koYEIEEeqL4KWraaLQJg" role="_Yt-tsEIEEeqL4KWraaLQJg"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_s7lPcEIEEeqL4KWraaLQJg" role="_ZXQUMEIEEeqL4KWraaLQJg"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_u7aZMEIEEeqL4KWraaLQJg" name="Connector11">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_u7bAQEIEEeqL4KWraaLQJg" role="_Yt-tsEIEEeqL4KWraaLQJg"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_u7bAQUIEEeqL4KWraaLQJg" role="_c5ZlQEIEEeqL4KWraaLQJg"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_vdwRQEIEEeqL4KWraaLQJg" name="Connector12">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_vdxfYEIEEeqL4KWraaLQJg" role="_cc8SwEIEEeqL4KWraaLQJg"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_vdxfYUIEEeqL4KWraaLQJg" role="_Yt-tsEIEEeqL4KWraaLQJg"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_v-Wc4EIEEeqL4KWraaLQJg" name="Connector13">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_v-XD8EIEEeqL4KWraaLQJg" role="_b6nBwEIEEeqL4KWraaLQJg"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_v-XD8UIEEeqL4KWraaLQJg" role="_Yt-tsEIEEeqL4KWraaLQJg"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_wj29sEIEEeqL4KWraaLQJg" name="Connector14">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_wj3kwEIEEeqL4KWraaLQJg" role="_a_8JQEIEEeqL4KWraaLQJg"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_wj3kwUIEEeqL4KWraaLQJg" role="_Yt-tsEIEEeqL4KWraaLQJg"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_y55A8EIEEeqL4KWraaLQJg" name="Connector15">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_y57dMEIEEeqL4KWraaLQJg" partWithPort="_Yt-tsEIEEeqL4KWraaLQJg" role="_k6V84EIEEeqL4KWraaLQJg"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_y58EQEIEEeqL4KWraaLQJg" role="_iEgYMEIEEeqL4KWraaLQJg"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_hawbIEIFEeqL4KWraaLQJg" name="Connector17">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_haxpQEIFEeqL4KWraaLQJg" role="_aFkLsEIEEeqL4KWraaLQJg"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_haxpQUIFEeqL4KWraaLQJg" role="_ZXQUMEIEEeqL4KWraaLQJg"/>
+        </ownedConnector>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_0ccnkEH-EeqWUJkOGHKGrQ" name="eCall control center">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_YUXGEkH_EeqWUJkOGHKGrQ" name="ecall emergency system" type="_Uec9kEHVEeq8GeHOlm902Q" aggregation="composite" association="_YUWfAEH_EeqWUJkOGHKGrQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YUXtIEH_EeqWUJkOGHKGrQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YUXtIUH_EeqWUJkOGHKGrQ" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_q58ZwEICEeqL4KWraaLQJg" name="FullPort2" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_k6V84EIEEeqL4KWraaLQJg" name="FullPort3" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_225QwEH-EeqWUJkOGHKGrQ" name="black boxes">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_XgPhgUH_EeqWUJkOGHKGrQ" name="ecall emergency system" type="_Uec9kEHVEeq8GeHOlm902Q" aggregation="composite" association="_XgOTYEH_EeqWUJkOGHKGrQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XgPhgkH_EeqWUJkOGHKGrQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XgPhg0H_EeqWUJkOGHKGrQ" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_4kfbAEH-EeqWUJkOGHKGrQ" name="global navigation satellite system">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_TF8gcEH_EeqWUJkOGHKGrQ" name="black boxes" type="_225QwEH-EeqWUJkOGHKGrQ" association="_TF5dIEH_EeqWUJkOGHKGrQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TF9ukEH_EeqWUJkOGHKGrQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TF9ukUH_EeqWUJkOGHKGrQ" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_TF5dIEH_EeqWUJkOGHKGrQ" memberEnd="_TF8gcEH_EeqWUJkOGHKGrQ _TF-VoEH_EeqWUJkOGHKGrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TF7SUEH_EeqWUJkOGHKGrQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TF7SUUH_EeqWUJkOGHKGrQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_TF-VoEH_EeqWUJkOGHKGrQ" name="global navigation satellite system" type="_4kfbAEH-EeqWUJkOGHKGrQ" association="_TF5dIEH_EeqWUJkOGHKGrQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_XgOTYEH_EeqWUJkOGHKGrQ" memberEnd="_XgPhgUH_EeqWUJkOGHKGrQ _XgQIkEH_EeqWUJkOGHKGrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XgO6cEH_EeqWUJkOGHKGrQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XgPhgEH_EeqWUJkOGHKGrQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_XgQIkEH_EeqWUJkOGHKGrQ" name="black boxes" type="_225QwEH-EeqWUJkOGHKGrQ" association="_XgOTYEH_EeqWUJkOGHKGrQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_YUWfAEH_EeqWUJkOGHKGrQ" memberEnd="_YUXGEkH_EeqWUJkOGHKGrQ _YUXtIkH_EeqWUJkOGHKGrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YUXGEEH_EeqWUJkOGHKGrQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YUXGEUH_EeqWUJkOGHKGrQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_YUXtIkH_EeqWUJkOGHKGrQ" name="ecall control center" type="_0ccnkEH-EeqWUJkOGHKGrQ" association="_YUWfAEH_EeqWUJkOGHKGrQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_ys7N4EICEeqL4KWraaLQJg" name="eCallControlCenterStaff"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_8RAzQEICEeqL4KWraaLQJg" name="eCallControlCenterResourses"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_tjdHwEIEEeqL4KWraaLQJg" client="_ZXQUMEIEEeqL4KWraaLQJg" supplier="_Yt-tsEIEEeqL4KWraaLQJg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_VzNDgBxFEeqHjPZmylpiBw" name="Government Emergency System">
       <elementImport xmi:type="uml:ElementImport" xmi:id="_XHC0gBxGEeqHjPZmylpiBw" alias="" importedElement="_eDbY0Bw7EeqHjPZmylpiBw"/>
@@ -603,4 +695,11 @@ NFR13 = ADAPTATION</body>
   <Blocks:Block xmi:id="_V7KnoEHfEeq8GeHOlm902Q" base_Class="_V7IycEHfEeq8GeHOlm902Q"/>
   <PortsAndFlows:ProxyPort xmi:id="_lILkYEHfEeq8GeHOlm902Q" base_Port="_lIJIIEHfEeq8GeHOlm902Q"/>
   <Blocks:NestedConnectorEnd xmi:id="_zfbWwkHfEeq8GeHOlm902Q" base_Element="_zfbWwEHfEeq8GeHOlm902Q" propertyPath="_UvznwEHfEeq8GeHOlm902Q" base_ConnectorEnd="_zfbWwEHfEeq8GeHOlm902Q"/>
+  <Blocks:Block xmi:id="_0cwJkEH-EeqWUJkOGHKGrQ" base_Class="_0ccnkEH-EeqWUJkOGHKGrQ"/>
+  <Blocks:Block xmi:id="_23BMkEH-EeqWUJkOGHKGrQ" base_Class="_225QwEH-EeqWUJkOGHKGrQ"/>
+  <Blocks:Block xmi:id="_4knW0EH-EeqWUJkOGHKGrQ" base_Class="_4kfbAEH-EeqWUJkOGHKGrQ"/>
+  <PortsAndFlows:FullPort xmi:id="_q6EVkEICEeqL4KWraaLQJg" base_Port="_q58ZwEICEeqL4KWraaLQJg"/>
+  <Blocks:Block xmi:id="_8RIvEEICEeqL4KWraaLQJg" base_Class="_8RAzQEICEeqL4KWraaLQJg"/>
+  <PortsAndFlows:FullPort xmi:id="_k6aOUEIEEeqL4KWraaLQJg" base_Port="_k6V84EIEEeqL4KWraaLQJg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_y58rUEIEEeqL4KWraaLQJg" base_Element="_y57dMEIEEeqL4KWraaLQJg" propertyPath="_Yt-tsEIEEeqL4KWraaLQJg" base_ConnectorEnd="_y57dMEIEEeqL4KWraaLQJg"/>
 </xmi:XMI>
