@@ -5,6 +5,22 @@
       <body>The following requirement diagram is disigned with the described Functional Requirements (FR) and Non Functional Requirements (NFR) from the first deliverable.&#xD;
 For adding more complexity in the requirements model, we have added more Quality attributes as NFR.</body>
     </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_cd8MwEIOEeq5vY9zAlhOdA">
+      <body>Developed by: Luis Gómez Alonso</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_c1Tj4EIOEeq5vY9zAlhOdA">
+      <body>The HealthSystem is composed of:&#xD;
+- 1 Call center&#xD;
+- Many Hospitals&#xD;
+- Many ambulances&#xD;
+&#xD;
+The Call Center is able to comunicate with the hospital, and the Hospital.&#xD;
+The hospital is able to comunicate with the ambulance.&#xD;
+&#xD;
+The call center has many agents&#xD;
+The hospital has many doctors and require many nurses&#xD;
+The ambulance require many nurses</body>
+    </ownedComment>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_eNnPkBw7EeqHjPZmylpiBw">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
@@ -517,6 +533,96 @@ NFR13 = ADAPTATION</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_qwklsEHeEeq8GeHOlm902Q" name="isPartOf" client="_aOhvsEHeEeq8GeHOlm902Q" supplier="_U2s2wEHbEeq8GeHOlm902Q"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_gvxZsEHfEeq8GeHOlm902Q" name="isPartOf" client="_UvznwEHfEeq8GeHOlm902Q" supplier="_U2s2wEHbEeq8GeHOlm902Q"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_foTFYEINEeq5vY9zAlhOdA" name="HealthCare ">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_xi_JUEINEeq5vY9zAlhOdA" name="hospital" type="_jOg-IEINEeq5vY9zAlhOdA" aggregation="composite" association="_xi8tEEINEeq5vY9zAlhOdA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xi_wYUINEeq5vY9zAlhOdA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yjY2YkINEeq5vY9zAlhOdA" name="ambulance" type="_nsN4gEINEeq5vY9zAlhOdA" aggregation="composite" association="_yjYPUEINEeq5vY9zAlhOdA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yjZdcUINEeq5vY9zAlhOdA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_z0lYgkINEeq5vY9zAlhOdA" name="call center" type="_hr4GsEINEeq5vY9zAlhOdA" aggregation="composite" association="_z0kxcEINEeq5vY9zAlhOdA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hr4GsEINEeq5vY9zAlhOdA" name="Call Center">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_IDm2kkIOEeq5vY9zAlhOdA" name="agent" type="__2-zYEINEeq5vY9zAlhOdA" aggregation="composite" association="_IDmPgEIOEeq5vY9zAlhOdA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IDndoEIOEeq5vY9zAlhOdA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_WOu4gUIOEeq5vY9zAlhOdA" name="hospital" type="_jOg-IEINEeq5vY9zAlhOdA" association="_WOuRcEIOEeq5vY9zAlhOdA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WOu4g0IOEeq5vY9zAlhOdA" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jOg-IEINEeq5vY9zAlhOdA" name="Hospital">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_KVic8UIOEeq5vY9zAlhOdA" name="medic" type="_CkOcwEIOEeq5vY9zAlhOdA" aggregation="composite" association="_KVh14EIOEeq5vY9zAlhOdA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KVic80IOEeq5vY9zAlhOdA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_T_jEIkIOEeq5vY9zAlhOdA" name="nurse" type="_FL6QsEIOEeq5vY9zAlhOdA" association="_T_idEEIOEeq5vY9zAlhOdA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T_jrMUIOEeq5vY9zAlhOdA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_XjHRgkIOEeq5vY9zAlhOdA" name="ambulance" type="_nsN4gEINEeq5vY9zAlhOdA" association="_XjGqcEIOEeq5vY9zAlhOdA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XjH4kUIOEeq5vY9zAlhOdA" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_nsN4gEINEeq5vY9zAlhOdA" name="Ambulance">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_RdeI8kIOEeq5vY9zAlhOdA" name="nurse" type="_FL6QsEIOEeq5vY9zAlhOdA" association="_Rddh4EIOEeq5vY9zAlhOdA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RdeI9EIOEeq5vY9zAlhOdA" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xi8tEEINEeq5vY9zAlhOdA" memberEnd="_xi_JUEINEeq5vY9zAlhOdA _xi_wYkINEeq5vY9zAlhOdA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xi-iQEINEeq5vY9zAlhOdA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xi-iQUINEeq5vY9zAlhOdA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_xi_wYkINEeq5vY9zAlhOdA" name="healthcare " type="_foTFYEINEeq5vY9zAlhOdA" association="_xi8tEEINEeq5vY9zAlhOdA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_yjYPUEINEeq5vY9zAlhOdA" memberEnd="_yjY2YkINEeq5vY9zAlhOdA _yjZdckINEeq5vY9zAlhOdA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yjY2YEINEeq5vY9zAlhOdA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yjY2YUINEeq5vY9zAlhOdA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_yjZdckINEeq5vY9zAlhOdA" name="healthcare " type="_foTFYEINEeq5vY9zAlhOdA" association="_yjYPUEINEeq5vY9zAlhOdA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_z0kxcEINEeq5vY9zAlhOdA" memberEnd="_z0lYgkINEeq5vY9zAlhOdA _z0l_kkINEeq5vY9zAlhOdA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_z0lYgEINEeq5vY9zAlhOdA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_z0lYgUINEeq5vY9zAlhOdA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_z0l_kkINEeq5vY9zAlhOdA" name="healthcare " type="_foTFYEINEeq5vY9zAlhOdA" association="_z0kxcEINEeq5vY9zAlhOdA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="__2-zYEINEeq5vY9zAlhOdA" name="Agent"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_CkOcwEIOEeq5vY9zAlhOdA" name="Medic"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_FL6QsEIOEeq5vY9zAlhOdA" name="Nurse"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_IDmPgEIOEeq5vY9zAlhOdA" memberEnd="_IDm2kkIOEeq5vY9zAlhOdA _IDndoUIOEeq5vY9zAlhOdA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IDm2kEIOEeq5vY9zAlhOdA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IDm2kUIOEeq5vY9zAlhOdA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_IDndoUIOEeq5vY9zAlhOdA" name="call center" type="_hr4GsEINEeq5vY9zAlhOdA" association="_IDmPgEIOEeq5vY9zAlhOdA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KVh14EIOEeq5vY9zAlhOdA" memberEnd="_KVic8UIOEeq5vY9zAlhOdA _KVjEAEIOEeq5vY9zAlhOdA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KVh14UIOEeq5vY9zAlhOdA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KVic8EIOEeq5vY9zAlhOdA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_KVjEAEIOEeq5vY9zAlhOdA" name="hospital" type="_jOg-IEINEeq5vY9zAlhOdA" association="_KVh14EIOEeq5vY9zAlhOdA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Rddh4EIOEeq5vY9zAlhOdA" memberEnd="_RdeI8kIOEeq5vY9zAlhOdA _RdeI9UIOEeq5vY9zAlhOdA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RdeI8EIOEeq5vY9zAlhOdA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RdeI8UIOEeq5vY9zAlhOdA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_RdeI9UIOEeq5vY9zAlhOdA" name="ambulance" type="_nsN4gEINEeq5vY9zAlhOdA" association="_Rddh4EIOEeq5vY9zAlhOdA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_T_idEEIOEeq5vY9zAlhOdA" memberEnd="_T_jEIkIOEeq5vY9zAlhOdA _T_jrMkIOEeq5vY9zAlhOdA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_T_jEIEIOEeq5vY9zAlhOdA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_T_jEIUIOEeq5vY9zAlhOdA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_T_jrMkIOEeq5vY9zAlhOdA" name="hospital" type="_jOg-IEINEeq5vY9zAlhOdA" association="_T_idEEIOEeq5vY9zAlhOdA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WOuRcEIOEeq5vY9zAlhOdA" memberEnd="_WOu4gUIOEeq5vY9zAlhOdA _WOu4hEIOEeq5vY9zAlhOdA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WOuRcUIOEeq5vY9zAlhOdA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WOu4gEIOEeq5vY9zAlhOdA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_WOu4hEIOEeq5vY9zAlhOdA" name="call center" type="_hr4GsEINEeq5vY9zAlhOdA" association="_WOuRcEIOEeq5vY9zAlhOdA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_XjGqcEIOEeq5vY9zAlhOdA" memberEnd="_XjHRgkIOEeq5vY9zAlhOdA _XjH4kkIOEeq5vY9zAlhOdA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XjHRgEIOEeq5vY9zAlhOdA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XjHRgUIOEeq5vY9zAlhOdA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_XjH4kkIOEeq5vY9zAlhOdA" name="hospital" type="_jOg-IEINEeq5vY9zAlhOdA" association="_XjGqcEIOEeq5vY9zAlhOdA"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_eIQOcBw7EeqHjPZmylpiBw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eIeQ4Bw7EeqHjPZmylpiBw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
@@ -702,4 +808,8 @@ NFR13 = ADAPTATION</body>
   <Blocks:Block xmi:id="_8RIvEEICEeqL4KWraaLQJg" base_Class="_8RAzQEICEeqL4KWraaLQJg"/>
   <PortsAndFlows:FullPort xmi:id="_k6aOUEIEEeqL4KWraaLQJg" base_Port="_k6V84EIEEeqL4KWraaLQJg"/>
   <Blocks:NestedConnectorEnd xmi:id="_y58rUEIEEeqL4KWraaLQJg" base_Element="_y57dMEIEEeqL4KWraaLQJg" propertyPath="_Yt-tsEIEEeqL4KWraaLQJg" base_ConnectorEnd="_y57dMEIEEeqL4KWraaLQJg"/>
+  <Blocks:Block xmi:id="_fokLIEINEeq5vY9zAlhOdA" base_Class="_foTFYEINEeq5vY9zAlhOdA"/>
+  <Blocks:Block xmi:id="_hr9mQEINEeq5vY9zAlhOdA" base_Class="_hr4GsEINEeq5vY9zAlhOdA"/>
+  <Blocks:Block xmi:id="_jOl2oEINEeq5vY9zAlhOdA" base_Class="_jOg-IEINEeq5vY9zAlhOdA"/>
+  <Blocks:Block xmi:id="_nsSxAEINEeq5vY9zAlhOdA" base_Class="_nsN4gEINEeq5vY9zAlhOdA"/>
 </xmi:XMI>
