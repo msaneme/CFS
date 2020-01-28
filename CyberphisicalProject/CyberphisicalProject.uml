@@ -549,6 +549,9 @@ NFR13 = ADAPTATION</body>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_WOu4gUIOEeq5vY9zAlhOdA" name="hospital" type="_jOg-IEINEeq5vY9zAlhOdA" association="_WOuRcEIOEeq5vY9zAlhOdA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WOu4g0IOEeq5vY9zAlhOdA" value="*"/>
       </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Q_DSIEIPEeq5vY9zAlhOdA" name="attend_calls" concurrency="concurrent"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_VG1m4EIPEeq5vY9zAlhOdA" name="evaluate_accident" concurrency="concurrent"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_laOV0EIPEeq5vY9zAlhOdA" name="call_hospitals"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_jOg-IEINEeq5vY9zAlhOdA" name="Hospital">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_KVic8UIOEeq5vY9zAlhOdA" name="medic" type="_CkOcwEIOEeq5vY9zAlhOdA" aggregation="composite" association="_KVh14EIOEeq5vY9zAlhOdA">
@@ -560,11 +563,20 @@ NFR13 = ADAPTATION</body>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_XjHRgkIOEeq5vY9zAlhOdA" name="ambulance" type="_nsN4gEINEeq5vY9zAlhOdA" association="_XjGqcEIOEeq5vY9zAlhOdA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XjH4kUIOEeq5vY9zAlhOdA" value="*"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_BtlTMEIPEeq5vY9zAlhOdA" name="Property5"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_CKOy8EIPEeq5vY9zAlhOdA" name="Property6"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_CYT1wEIQEeq5vY9zAlhOdA" name="Property8"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ChPIQEIQEeq5vY9zAlhOdA" name="Property9"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_CowskEIQEeq5vY9zAlhOdA" name="Property10"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_I6X0kEIQEeq5vY9zAlhOdA" name="Property11"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_6-8Q8EIOEeq5vY9zAlhOdA" name="call_ambulance"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_DIB38EIPEeq5vY9zAlhOdA" name="check_current_capacity"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_nsN4gEINEeq5vY9zAlhOdA" name="Ambulance">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_RdeI8kIOEeq5vY9zAlhOdA" name="nurse" type="_FL6QsEIOEeq5vY9zAlhOdA" association="_Rddh4EIOEeq5vY9zAlhOdA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RdeI9EIOEeq5vY9zAlhOdA" value="*"/>
       </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_zEMygEIPEeq5vY9zAlhOdA" name="calculate_route"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_xi8tEEINEeq5vY9zAlhOdA" memberEnd="_xi_JUEINEeq5vY9zAlhOdA _xi_wYkINEeq5vY9zAlhOdA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xi-iQEINEeq5vY9zAlhOdA" source="org.eclipse.papyrus">
