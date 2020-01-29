@@ -156,6 +156,10 @@ NFR13 = ADAPTATION</body>
       <packagedElement xmi:type="uml:Interface" xmi:id="_-QTFIEErEeqQKdZeRgYb6w" name="Telemetry"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_apIbsEIYEeq5vY9zAlhOdA" name="wounded"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_DEVfMEIZEeq5vY9zAlhOdA" name="Sanitary Equipment"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_aTj-oEK4EeqxnpjN1ggWLQ" name="AmbulanceBed">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_kBmxQEK4EeqxnpjN1ggWLQ" name="Transport_in" type="_apIbsEIYEeq5vY9zAlhOdA" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_uWBnYEK4EeqxnpjN1ggWLQ" name="Transport_out" type="_apIbsEIYEeq5vY9zAlhOdA" aggregation="composite"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_2Oii4BxEEeqHjPZmylpiBw" name="Fire Emergency Center">
       <ownedComment xmi:type="uml:Comment" xmi:id="_ExIEAEBfEeq-pPe9F2qjUQ">
@@ -509,6 +513,8 @@ With the equipment the nurses also could try to mitigate the pain or attend the 
       <ownedAttribute xmi:type="uml:Port" xmi:id="_FswvcEIYEeq5vY9zAlhOdA" name="emergency_in" type="_apIbsEIYEeq5vY9zAlhOdA" aggregation="composite"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_m-YhIEIYEeq5vY9zAlhOdA" name="Property10" type="_DEVfMEIZEeq5vY9zAlhOdA" aggregation="composite"/>
       <ownedAttribute xmi:type="uml:Port" xmi:id="_LfS5UEIZEeq5vY9zAlhOdA" name="emergency_out" type="_apIbsEIYEeq5vY9zAlhOdA" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_WyP0AEK4EeqxnpjN1ggWLQ" name="Bed" type="_aTj-oEK4EeqxnpjN1ggWLQ" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_LWRDcEK5EeqxnpjN1ggWLQ" name="Phone" type="_QCBA4EK5EeqxnpjN1ggWLQ" aggregation="composite"/>
       <ownedConnector xmi:type="uml:Connector" xmi:id="_E5Ly4EIXEeq5vY9zAlhOdA" name="Inform_nurse">
         <end xmi:type="uml:ConnectorEnd" xmi:id="_E5SgkEIXEeq5vY9zAlhOdA" role="_-UEK8EIUEeq5vY9zAlhOdA"/>
         <end xmi:type="uml:ConnectorEnd" xmi:id="_E5SgkUIXEeq5vY9zAlhOdA" role="_xuv-UEIWEeq5vY9zAlhOdA"/>
@@ -519,15 +525,15 @@ With the equipment the nurses also could try to mitigate the pain or attend the 
       </ownedConnector>
       <ownedConnector xmi:type="uml:Connector" xmi:id="_dWOUEEIYEeq5vY9zAlhOdA" name="BindingConnector9">
         <end xmi:type="uml:ConnectorEnd" xmi:id="_dWR-cEIYEeq5vY9zAlhOdA" role="_FswvcEIYEeq5vY9zAlhOdA"/>
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_dWR-cUIYEeq5vY9zAlhOdA" role="_xuv-UEIWEeq5vY9zAlhOdA"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_dWR-cUIYEeq5vY9zAlhOdA" partWithPort="_WyP0AEK4EeqxnpjN1ggWLQ" role="_kBmxQEK4EeqxnpjN1ggWLQ"/>
       </ownedConnector>
       <ownedConnector xmi:type="uml:Connector" xmi:id="_JXHE0EIZEeq5vY9zAlhOdA" name="Connector11">
         <end xmi:type="uml:ConnectorEnd" xmi:id="_JXHr4EIZEeq5vY9zAlhOdA" role="_xuv-UEIWEeq5vY9zAlhOdA"/>
         <end xmi:type="uml:ConnectorEnd" xmi:id="_JXIS8EIZEeq5vY9zAlhOdA" role="_m-YhIEIYEeq5vY9zAlhOdA"/>
       </ownedConnector>
-      <ownedConnector xmi:type="uml:Connector" xmi:id="_VhsLUEIZEeq5vY9zAlhOdA" name="Connector13">
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_VhtZcEIZEeq5vY9zAlhOdA" role="_xuv-UEIWEeq5vY9zAlhOdA"/>
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_VhtZcUIZEeq5vY9zAlhOdA" role="_LfS5UEIZEeq5vY9zAlhOdA"/>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_DwaFUEK5EeqxnpjN1ggWLQ" name="Connector17">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_Dwfk4EK5EeqxnpjN1ggWLQ" partWithPort="_WyP0AEK4EeqxnpjN1ggWLQ" role="_uWBnYEK4EeqxnpjN1ggWLQ"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_Dwfk4UK5EeqxnpjN1ggWLQ" role="_LfS5UEIZEeq5vY9zAlhOdA"/>
       </ownedConnector>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_zEMygEIPEeq5vY9zAlhOdA" name="calculate_route"/>
     </packagedElement>
@@ -596,6 +602,7 @@ With the equipment the nurses also could try to mitigate the pain or attend the 
       <ownedEnd xmi:type="uml:Property" xmi:id="_K4bx0kISEeq5vY9zAlhOdA" name="goverment" type="_vAKQgDPFEeqjq_qXd37OBQ" association="_K4ajsEISEeq5vY9zAlhOdA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_rmgNsEIWEeq5vY9zAlhOdA" name="GPS Navegator"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_QCBA4EK5EeqxnpjN1ggWLQ" name="Telecomunation"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_eIQOcBw7EeqHjPZmylpiBw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eIeQ4Bw7EeqHjPZmylpiBw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
@@ -781,4 +788,10 @@ With the equipment the nurses also could try to mitigate the pain or attend the 
   <Blocks:BindingConnector xmi:id="_dWSlgEIYEeq5vY9zAlhOdA" base_Connector="_dWOUEEIYEeq5vY9zAlhOdA"/>
   <Blocks:Block xmi:id="_DEZJkEIZEeq5vY9zAlhOdA" base_Class="_DEVfMEIZEeq5vY9zAlhOdA"/>
   <PortsAndFlows:FullPort xmi:id="_LfbcMEIZEeq5vY9zAlhOdA" base_Port="_LfS5UEIZEeq5vY9zAlhOdA"/>
+  <Blocks:Block xmi:id="_aTtvoEK4EeqxnpjN1ggWLQ" base_Class="_aTj-oEK4EeqxnpjN1ggWLQ"/>
+  <PortsAndFlows:FullPort xmi:id="_kBv7MEK4EeqxnpjN1ggWLQ" base_Port="_kBmxQEK4EeqxnpjN1ggWLQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_s2a10EK4EeqxnpjN1ggWLQ" base_Element="_dWR-cUIYEeq5vY9zAlhOdA" propertyPath="_WyP0AEK4EeqxnpjN1ggWLQ" base_ConnectorEnd="_dWR-cUIYEeq5vY9zAlhOdA"/>
+  <PortsAndFlows:FullPort xmi:id="_uWFRwEK4EeqxnpjN1ggWLQ" base_Port="_uWBnYEK4EeqxnpjN1ggWLQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_DwgL8EK5EeqxnpjN1ggWLQ" base_Element="_Dwfk4EK5EeqxnpjN1ggWLQ" propertyPath="_WyP0AEK4EeqxnpjN1ggWLQ" base_ConnectorEnd="_Dwfk4EK5EeqxnpjN1ggWLQ"/>
+  <Blocks:Block xmi:id="_QCEEMEK5EeqxnpjN1ggWLQ" base_Class="_QCBA4EK5EeqxnpjN1ggWLQ"/>
 </xmi:XMI>
