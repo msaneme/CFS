@@ -35,6 +35,15 @@ to go to the Requirement Diagrams</body>
 &lt;-----&#xD;
 to go to the BBDs</body>
     </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="__ODxwEnaEeqsM-kbkh32QQ">
+      <body>Global System developed by Mario&#xD;
+eCall System developed by Javier&#xD;
+Firefighters Department developed by Gianluca&#xD;
+Healthcare System developed by Luis&#xD;
+&#xD;
+&#xD;
+</body>
+    </ownedComment>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_eNnPkBw7EeqHjPZmylpiBw">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
@@ -702,7 +711,8 @@ to go to the IBD</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_4G5tkEeEEeqFf64H1poDBQ" name="Healthcare System">
       <ownedComment xmi:type="uml:Comment" xmi:id="_RnXx8EeXEeqFf64H1poDBQ">
-        <body>Developed by: Luis Gómez Alonso</body>
+        <body>Developed by: Luis Gómez Alonso&#xD;
+Click On Healthcare_System Block to enter into the IBD </body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_umR1ckeQEeqFf64H1poDBQ" type="_MKmEYEeQEeqFf64H1poDBQ" association="_umROYEeQEeqFf64H1poDBQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_umScgUeQEeqFf64H1poDBQ" value="*"/>
@@ -777,7 +787,7 @@ to go to the IBD</body>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_W4KvcEeSEeqFf64H1poDBQ" name="emergency_phone" aggregation="composite">
           <type xmi:type="uml:DataType" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Number"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_qM4PcEeUEeqFf64H1poDBQ" name="call_in" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_qM4PcEeUEeqFf64H1poDBQ" name="call_in" type="_fJ3N8EeUEeqFf64H1poDBQ" aggregation="composite"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_pAoJoEeSEeqFf64H1poDBQ" name="attend_call"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_qvVuMEeSEeqFf64H1poDBQ" name="preevaluate_accident"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_vlMC0EeSEeqFf64H1poDBQ" name="call_hospital"/>
