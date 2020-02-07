@@ -25,6 +25,16 @@ The ambulance require many nurses</body>
       <body>Developed by: Mario San Emeterio&#xD;
 </body>
     </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="__1-oAEnHEeqwP8IJZx_mgg">
+      <body>Double click on theese blocks&#xD;
+----->&#xD;
+to go to the Requirement Diagrams</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_NKGwgEnIEeqwP8IJZx_mgg">
+      <body>Double click on these blocks&#xD;
+&lt;-----&#xD;
+to go to the BBDs</body>
+    </ownedComment>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_eNnPkBw7EeqHjPZmylpiBw">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
@@ -450,6 +460,153 @@ The ambulance require many nurses</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_OnDvMDfLEeqWVZHXsEoK-A" client="_rS7UcBxFEeqHjPZmylpiBw" supplier="_m9Vt4Bw9EeqHjPZmylpiBw"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Kv7fAEnGEeqwP8IJZx_mgg" name="Firefighters System">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_jj6gkEnHEeqwP8IJZx_mgg">
+        <body>NFR11 = SPEED&#xD;
+NFR12 = QUALIFIED&#xD;
+NFR13 = ADAPTATION</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_luh-AEnHEeqwP8IJZx_mgg">
+        <body>Developed by:&#xD;
+&#xD;
+Gianluca Panicucci</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bFliYEUyEeqTc80YhZp9Qw" name="Firefighters Department">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_uu1g4EnHEeqwP8IJZx_mgg">
+          <body>Developed by:&#xD;
+&#xD;
+Gianluca Panicucci</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_yUDUEEnHEeqwP8IJZx_mgg">
+          <body>Developed by:&#xD;
+&#xD;
+Gianluca Panicucci</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_2vPtAEnHEeqwP8IJZx_mgg">
+          <body>Double click on this block&#xD;
+&lt;-----&#xD;
+to go to the IBD</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_IHMS0kU_EeqTc80YhZp9Qw" name="firefighters emergency management" type="_tbkPoEU8EeqTc80YhZp9Qw" aggregation="composite" association="_IHLrwEU_EeqTc80YhZp9Qw"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_LOASwkU_EeqTc80YhZp9Qw" name="firestation" type="_fslsQEU-EeqTc80YhZp9Qw" aggregation="shared" association="_LN_rsEU_EeqTc80YhZp9Qw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LOA50EU_EeqTc80YhZp9Qw" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_MfESAEU_EeqTc80YhZp9Qw" name="firetruck" type="_kRfa0EU-EeqTc80YhZp9Qw" aggregation="shared" association="_MfDD4EU_EeqTc80YhZp9Qw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4uqNIEU_EeqTc80YhZp9Qw" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_QdaW4EU_EeqTc80YhZp9Qw" name="firefighter" type="_bFliYEUyEeqTc80YhZp9Qw" aggregation="shared" association="_QdZv0EU_EeqTc80YhZp9Qw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QdaW4kU_EeqTc80YhZp9Qw" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_NMtksEVLEeqTc80YhZp9Qw" name="EmergencyOut" type="_uYbHMELQEeqIiPmtO9O07g" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_GXopoEVTEeqTc80YhZp9Qw" name="Firestations Number">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_6oo4IEkREeqQmYnvsibiSg" name="FireDepartmentId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_u6PEsEVKEeqTc80YhZp9Qw" name="Connector11">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_u6QS0EVKEeqTc80YhZp9Qw" role="_IHMS0kU_EeqTc80YhZp9Qw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_u6QS0UVKEeqTc80YhZp9Qw" role="_LOASwkU_EeqTc80YhZp9Qw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_v4n_kEVKEeqTc80YhZp9Qw" name="ProcessedInfoIn">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_v4omoEVKEeqTc80YhZp9Qw" partWithPort="_IHMS0kU_EeqTc80YhZp9Qw" role="_vE5j8EVHEeqTc80YhZp9Qw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_v4omoUVKEeqTc80YhZp9Qw" partWithPort="_LOASwkU_EeqTc80YhZp9Qw" role="_s9BRcEVHEeqTc80YhZp9Qw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_4B1iYEVKEeqTc80YhZp9Qw" name="Connector13">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_4B2JcEVKEeqTc80YhZp9Qw" role="_LOASwkU_EeqTc80YhZp9Qw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_4B2JcUVKEeqTc80YhZp9Qw" role="_QdaW4EU_EeqTc80YhZp9Qw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_5GgEYEVKEeqTc80YhZp9Qw" name="Connector14">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_5GgrcEVKEeqTc80YhZp9Qw" partWithPort="_LOASwkU_EeqTc80YhZp9Qw" role="_whA8oEVHEeqTc80YhZp9Qw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_5GgrcUVKEeqTc80YhZp9Qw" partWithPort="_MfESAEU_EeqTc80YhZp9Qw" role="_4hT0AEVHEeqTc80YhZp9Qw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_ZaAoAEVLEeqTc80YhZp9Qw" name="Connector16">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_ZaBPEEVLEeqTc80YhZp9Qw" role="_NMtksEVLEeqTc80YhZp9Qw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_ZaBPEUVLEeqTc80YhZp9Qw" partWithPort="_IHMS0kU_EeqTc80YhZp9Qw" role="_sXgwoEVHEeqTc80YhZp9Qw"/>
+        </ownedConnector>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_tbkPoEU8EeqTc80YhZp9Qw" name="Firefighters Emergency Management">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_sXgwoEVHEeqTc80YhZp9Qw" name="EmergencyIn" type="_uYbHMELQEeqIiPmtO9O07g" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_vE5j8EVHEeqTc80YhZp9Qw" name="ProcessedInfoOut" type="_yCflMELQEeqIiPmtO9O07g" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_pxfTIEVTEeqTc80YhZp9Qw" name="Dispatchers">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_fslsQEU-EeqTc80YhZp9Qw" name="Firestation">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HigmgEVBEeqTc80YhZp9Qw" name="barrack" type="_-YO6MEU-EeqTc80YhZp9Qw" aggregation="shared" association="_HifYYEVBEeqTc80YhZp9Qw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_IPqAYkVBEeqTc80YhZp9Qw" name="garage" type="__LT88EU-EeqTc80YhZp9Qw" aggregation="shared" association="_IPpZUEVBEeqTc80YhZp9Qw"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_s9BRcEVHEeqTc80YhZp9Qw" name="ProcessedInfoIn" type="_yCflMELQEeqIiPmtO9O07g" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_whA8oEVHEeqTc80YhZp9Qw" name="AlarmOut" type="_AQ5o0ELKEeqIiPmtO9O07g" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_M1WT8EVTEeqTc80YhZp9Qw" name="Firestation Address" type="_AQ5o0ELKEeqIiPmtO9O07g"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_kRfa0EU-EeqTc80YhZp9Qw" name="Firetruck">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_4hT0AEVHEeqTc80YhZp9Qw" name="AlarmIn" type="_AQ5o0ELKEeqIiPmtO9O07g" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="__0OnAEVSEeqTc80YhZp9Qw" name="Vehicle" type="_jV92oEVSEeqTc80YhZp9Qw"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Actor" xmi:id="_162eMEU-EeqTc80YhZp9Qw" name="Firefighter" visibility="public"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_-YO6MEU-EeqTc80YhZp9Qw" name="Barrack">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_0wyvwEVHEeqTc80YhZp9Qw" name="FullPort1" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_eh5qsEVSEeqTc80YhZp9Qw" name="People Capacity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="__LT88EU-EeqTc80YhZp9Qw" name="Garage">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_2UtZkEVHEeqTc80YhZp9Qw" name="FullPort1" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_3bW4kEVHEeqTc80YhZp9Qw" name="FullPort2" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VkcngEVSEeqTc80YhZp9Qw" name="Vehicles">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_OQy9sEnGEeqwP8IJZx_mgg" client="_Kv7fAEnGEeqwP8IJZx_mgg" supplier="_VzNDgBxFEeqHjPZmylpiBw"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_5AZ2sELJEeqIiPmtO9O07g" name="FirefightersMeasures">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_AQ5o0ELKEeqIiPmtO9O07g" name="position">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_a1kaUELKEeqIiPmtO9O07g" name="latitude" type="_Fm2Z0ELKEeqIiPmtO9O07g"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_d_fYoELKEeqIiPmtO9O07g" name="longitude" type="_Fm2Z0ELKEeqIiPmtO9O07g"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_haNMAELKEeqIiPmtO9O07g" name="altitude" type="_J08x8ELKEeqIiPmtO9O07g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Fm2Z0ELKEeqIiPmtO9O07g" name="degree"/>
+        <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_J08x8ELKEeqIiPmtO9O07g" name="meter"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_uYbHMELQEeqIiPmtO9O07g" name="emergency_call">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UufDIELREeqIiPmtO9O07g" name="type_emergency" type="_yCflMELQEeqIiPmtO9O07g"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_YB8X8ELREeqIiPmtO9O07g" name="position" type="_AQ5o0ELKEeqIiPmtO9O07g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_yCflMELQEeqIiPmtO9O07g" name="emergency_type">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_2XAHUELQEeqIiPmtO9O07g" name="car crash">
+            <specification xmi:type="uml:LiteralString" xmi:id="_ABlWQELREeqIiPmtO9O07g" name="car crash" value="1"/>
+          </ownedLiteral>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_3GMvoELQEeqIiPmtO9O07g" name="fire">
+            <specification xmi:type="uml:LiteralString" xmi:id="_IM9l0EVOEeqTc80YhZp9Qw" name="fire" value="2"/>
+          </ownedLiteral>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_3sO04ELQEeqIiPmtO9O07g" name="trapped people">
+            <specification xmi:type="uml:LiteralString" xmi:id="_MUSAgEVOEeqTc80YhZp9Qw" name="trapped people" value="3"/>
+          </ownedLiteral>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4jSYsELQEeqIiPmtO9O07g" name="other emergency">
+            <specification xmi:type="uml:LiteralString" xmi:id="_RDuLIEVOEeqTc80YhZp9Qw" name="other emergency" value="4"/>
+          </ownedLiteral>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_jV92oEVSEeqTc80YhZp9Qw" name="vehicle_type">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_sisr8EVSEeqTc80YhZp9Qw" name="Normal car">
+            <specification xmi:type="uml:LiteralString" xmi:id="_sisr8UVSEeqTc80YhZp9Qw" name="Normal Car" value="1"/>
+          </ownedLiteral>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zKzoYEVSEeqTc80YhZp9Qw" name="Firetruck Small">
+            <specification xmi:type="uml:LiteralString" xmi:id="_zKzoYUVSEeqTc80YhZp9Qw" name="Firetruck Small" value="2"/>
+          </ownedLiteral>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_1gaN0EVSEeqTc80YhZp9Qw" name="Firetruck Medium">
+            <specification xmi:type="uml:LiteralString" xmi:id="_1gaN0UVSEeqTc80YhZp9Qw" name="Firetruck Medium" value="3"/>
+          </ownedLiteral>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4CJx0EVSEeqTc80YhZp9Qw" name="Firetruck Big">
+            <specification xmi:type="uml:LiteralString" xmi:id="_4CJx0UVSEeqTc80YhZp9Qw" name="Firetruck Big" value="4"/>
+          </ownedLiteral>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mWHX4EnGEeqwP8IJZx_mgg" name="Provide Assistance in Fires or Emergencies"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_msvvMEnGEeqwP8IJZx_mgg" name="Accuracy and precision"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_nF2ywEnGEeqwP8IJZx_mgg" name="Speed"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_oKdqYEnGEeqwP8IJZx_mgg" name="Ability to adapt to different situations"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_rjRZQEnGEeqwP8IJZx_mgg" name="Non-Functional Requirement 1" client="_msvvMEnGEeqwP8IJZx_mgg" supplier="_mWHX4EnGEeqwP8IJZx_mgg"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_sOlnIEnGEeqwP8IJZx_mgg" name="Non-Functional Requirement 11" client="_nF2ywEnGEeqwP8IJZx_mgg" supplier="_mWHX4EnGEeqwP8IJZx_mgg"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_tCKZIEnGEeqwP8IJZx_mgg" name="Non-Functional Requirement 13" client="_oKdqYEnGEeqwP8IJZx_mgg" supplier="_mWHX4EnGEeqwP8IJZx_mgg"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_a7OGEDPGEeqjq_qXd37OBQ" memberEnd="_a7OtIjPGEeqjq_qXd37OBQ _a7PUMjPGEeqjq_qXd37OBQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_a7OtIDPGEeqjq_qXd37OBQ" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_a7OtITPGEeqjq_qXd37OBQ" key="nature" value="UML_Nature"/>
@@ -476,121 +633,9 @@ The ambulance require many nurses</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_qwklsEHeEeq8GeHOlm902Q" name="isPartOfPlatform" client="_aOhvsEHeEeq8GeHOlm902Q" supplier="_U2s2wEHbEeq8GeHOlm902Q"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_gvxZsEHfEeq8GeHOlm902Q" name="isPartOf" client="_UvznwEHfEeq8GeHOlm902Q" supplier="_U2s2wEHbEeq8GeHOlm902Q"/>
-    <packagedElement xmi:type="uml:Package" xmi:id="_5AZ2sELJEeqIiPmtO9O07g" name="FirefightersMeasures">
-      <packagedElement xmi:type="uml:DataType" xmi:id="_AQ5o0ELKEeqIiPmtO9O07g" name="position">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_a1kaUELKEeqIiPmtO9O07g" name="latitude" type="_Fm2Z0ELKEeqIiPmtO9O07g"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_d_fYoELKEeqIiPmtO9O07g" name="longitude" type="_Fm2Z0ELKEeqIiPmtO9O07g"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_haNMAELKEeqIiPmtO9O07g" name="altitude" type="_J08x8ELKEeqIiPmtO9O07g"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Fm2Z0ELKEeqIiPmtO9O07g" name="degree"/>
-      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_J08x8ELKEeqIiPmtO9O07g" name="meter"/>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_uYbHMELQEeqIiPmtO9O07g" name="emergency_call">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_UufDIELREeqIiPmtO9O07g" name="type_emergency" type="_yCflMELQEeqIiPmtO9O07g"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_YB8X8ELREeqIiPmtO9O07g" name="position" type="_AQ5o0ELKEeqIiPmtO9O07g"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_yCflMELQEeqIiPmtO9O07g" name="emergency_type">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_2XAHUELQEeqIiPmtO9O07g" name="car crash">
-          <specification xmi:type="uml:LiteralString" xmi:id="_ABlWQELREeqIiPmtO9O07g" name="car crash" value="1"/>
-        </ownedLiteral>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_3GMvoELQEeqIiPmtO9O07g" name="fire">
-          <specification xmi:type="uml:LiteralString" xmi:id="_IM9l0EVOEeqTc80YhZp9Qw" name="fire" value="2"/>
-        </ownedLiteral>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_3sO04ELQEeqIiPmtO9O07g" name="trapped people">
-          <specification xmi:type="uml:LiteralString" xmi:id="_MUSAgEVOEeqTc80YhZp9Qw" name="trapped people" value="3"/>
-        </ownedLiteral>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4jSYsELQEeqIiPmtO9O07g" name="other emergency">
-          <specification xmi:type="uml:LiteralString" xmi:id="_RDuLIEVOEeqTc80YhZp9Qw" name="other emergency" value="4"/>
-        </ownedLiteral>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_jV92oEVSEeqTc80YhZp9Qw" name="vehicle_type">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_sisr8EVSEeqTc80YhZp9Qw" name="Normal car">
-          <specification xmi:type="uml:LiteralString" xmi:id="_sisr8UVSEeqTc80YhZp9Qw" name="Normal Car" value="1"/>
-        </ownedLiteral>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zKzoYEVSEeqTc80YhZp9Qw" name="Firetruck Small">
-          <specification xmi:type="uml:LiteralString" xmi:id="_zKzoYUVSEeqTc80YhZp9Qw" name="Firetruck Small" value="2"/>
-        </ownedLiteral>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_1gaN0EVSEeqTc80YhZp9Qw" name="Firetruck Medium">
-          <specification xmi:type="uml:LiteralString" xmi:id="_1gaN0UVSEeqTc80YhZp9Qw" name="Firetruck Medium" value="3"/>
-        </ownedLiteral>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4CJx0EVSEeqTc80YhZp9Qw" name="Firetruck Big">
-          <specification xmi:type="uml:LiteralString" xmi:id="_4CJx0UVSEeqTc80YhZp9Qw" name="Firetruck Big" value="4"/>
-        </ownedLiteral>
-      </packagedElement>
-    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_Z7iY8EOkEeq_INcuz2l8ag" name="Flows">
       <packagedElement xmi:type="uml:Class" xmi:id="_beqYkEOkEeq_INcuz2l8ag" name="Location"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_dIjHgEOkEeq_INcuz2l8ag" name="eCallAlarm"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_bFliYEUyEeqTc80YhZp9Qw" name="Firefighters Department">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_IHMS0kU_EeqTc80YhZp9Qw" name="firefighters emergency management" type="_tbkPoEU8EeqTc80YhZp9Qw" aggregation="composite" association="_IHLrwEU_EeqTc80YhZp9Qw"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_LOASwkU_EeqTc80YhZp9Qw" name="firestation" type="_fslsQEU-EeqTc80YhZp9Qw" aggregation="shared" association="_LN_rsEU_EeqTc80YhZp9Qw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LOA50EU_EeqTc80YhZp9Qw" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_MfESAEU_EeqTc80YhZp9Qw" name="firetruck" type="_kRfa0EU-EeqTc80YhZp9Qw" aggregation="shared" association="_MfDD4EU_EeqTc80YhZp9Qw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4uqNIEU_EeqTc80YhZp9Qw" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_QdaW4EU_EeqTc80YhZp9Qw" name="firefighter" type="_bFliYEUyEeqTc80YhZp9Qw" aggregation="shared" association="_QdZv0EU_EeqTc80YhZp9Qw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QdaW4kU_EeqTc80YhZp9Qw" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Port" xmi:id="_NMtksEVLEeqTc80YhZp9Qw" name="EmergencyOut" type="_uYbHMELQEeqIiPmtO9O07g" aggregation="composite"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_GXopoEVTEeqTc80YhZp9Qw" name="Firestations Number">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_6oo4IEkREeqQmYnvsibiSg" name="FireDepartmentId">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-      </ownedAttribute>
-      <ownedConnector xmi:type="uml:Connector" xmi:id="_u6PEsEVKEeqTc80YhZp9Qw" name="Connector11">
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_u6QS0EVKEeqTc80YhZp9Qw" role="_IHMS0kU_EeqTc80YhZp9Qw"/>
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_u6QS0UVKEeqTc80YhZp9Qw" role="_LOASwkU_EeqTc80YhZp9Qw"/>
-      </ownedConnector>
-      <ownedConnector xmi:type="uml:Connector" xmi:id="_v4n_kEVKEeqTc80YhZp9Qw" name="ProcessedInfoIn">
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_v4omoEVKEeqTc80YhZp9Qw" partWithPort="_IHMS0kU_EeqTc80YhZp9Qw" role="_vE5j8EVHEeqTc80YhZp9Qw"/>
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_v4omoUVKEeqTc80YhZp9Qw" partWithPort="_LOASwkU_EeqTc80YhZp9Qw" role="_s9BRcEVHEeqTc80YhZp9Qw"/>
-      </ownedConnector>
-      <ownedConnector xmi:type="uml:Connector" xmi:id="_4B1iYEVKEeqTc80YhZp9Qw" name="Connector13">
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_4B2JcEVKEeqTc80YhZp9Qw" role="_LOASwkU_EeqTc80YhZp9Qw"/>
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_4B2JcUVKEeqTc80YhZp9Qw" role="_QdaW4EU_EeqTc80YhZp9Qw"/>
-      </ownedConnector>
-      <ownedConnector xmi:type="uml:Connector" xmi:id="_5GgEYEVKEeqTc80YhZp9Qw" name="Connector14">
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_5GgrcEVKEeqTc80YhZp9Qw" partWithPort="_LOASwkU_EeqTc80YhZp9Qw" role="_whA8oEVHEeqTc80YhZp9Qw"/>
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_5GgrcUVKEeqTc80YhZp9Qw" partWithPort="_MfESAEU_EeqTc80YhZp9Qw" role="_4hT0AEVHEeqTc80YhZp9Qw"/>
-      </ownedConnector>
-      <ownedConnector xmi:type="uml:Connector" xmi:id="_ZaAoAEVLEeqTc80YhZp9Qw" name="Connector16">
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_ZaBPEEVLEeqTc80YhZp9Qw" role="_NMtksEVLEeqTc80YhZp9Qw"/>
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_ZaBPEUVLEeqTc80YhZp9Qw" partWithPort="_IHMS0kU_EeqTc80YhZp9Qw" role="_sXgwoEVHEeqTc80YhZp9Qw"/>
-      </ownedConnector>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_tbkPoEU8EeqTc80YhZp9Qw" name="Firefighters Emergency Management">
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_sXgwoEVHEeqTc80YhZp9Qw" name="EmergencyIn" type="_uYbHMELQEeqIiPmtO9O07g" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_vE5j8EVHEeqTc80YhZp9Qw" name="ProcessedInfoOut" type="_yCflMELQEeqIiPmtO9O07g" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_pxfTIEVTEeqTc80YhZp9Qw" name="Dispatchers">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-        </ownedAttribute>
-      </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_fslsQEU-EeqTc80YhZp9Qw" name="Firestation">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_HigmgEVBEeqTc80YhZp9Qw" name="barrack" type="_-YO6MEU-EeqTc80YhZp9Qw" aggregation="shared" association="_HifYYEVBEeqTc80YhZp9Qw"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_IPqAYkVBEeqTc80YhZp9Qw" name="garage" type="__LT88EU-EeqTc80YhZp9Qw" aggregation="shared" association="_IPpZUEVBEeqTc80YhZp9Qw"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_s9BRcEVHEeqTc80YhZp9Qw" name="ProcessedInfoIn" type="_yCflMELQEeqIiPmtO9O07g" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_whA8oEVHEeqTc80YhZp9Qw" name="AlarmOut" type="_AQ5o0ELKEeqIiPmtO9O07g" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_M1WT8EVTEeqTc80YhZp9Qw" name="Firestation Address" type="_AQ5o0ELKEeqIiPmtO9O07g"/>
-      </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_kRfa0EU-EeqTc80YhZp9Qw" name="Firetruck">
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_4hT0AEVHEeqTc80YhZp9Qw" name="AlarmIn" type="_AQ5o0ELKEeqIiPmtO9O07g" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="__0OnAEVSEeqTc80YhZp9Qw" name="Vehicle" type="_jV92oEVSEeqTc80YhZp9Qw"/>
-      </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Actor" xmi:id="_162eMEU-EeqTc80YhZp9Qw" name="Firefighter" visibility="public"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_-YO6MEU-EeqTc80YhZp9Qw" name="Barrack">
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_0wyvwEVHEeqTc80YhZp9Qw" name="FullPort1" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_eh5qsEVSEeqTc80YhZp9Qw" name="People Capacity">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-        </ownedAttribute>
-      </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="__LT88EU-EeqTc80YhZp9Qw" name="Garage">
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_2UtZkEVHEeqTc80YhZp9Qw" name="FullPort1" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_3bW4kEVHEeqTc80YhZp9Qw" name="FullPort2" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_VkcngEVSEeqTc80YhZp9Qw" name="Vehicles">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-        </ownedAttribute>
-      </nestedClassifier>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_mVP4wEUyEeqTc80YhZp9Qw" visibility="public" memberEnd="_mVUKMEUyEeqTc80YhZp9Qw _mVV_YEUyEeqTc80YhZp9Qw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mVS8EEUyEeqTc80YhZp9Qw" source="org.eclipse.papyrus">
@@ -1094,4 +1139,8 @@ The ambulance require many nurses</body>
   <Blocks:NestedConnectorEnd xmi:id="_w_-68keUEeqFf64H1poDBQ" base_Element="_w_-68UeUEeqFf64H1poDBQ" propertyPath="_sq69AEeFEeqFf64H1poDBQ" base_ConnectorEnd="_w_-68UeUEeqFf64H1poDBQ"/>
   <PortsAndFlows:FullPort xmi:id="_a8SvYEeWEeqFf64H1poDBQ" base_Port="_a8PsEEeWEeqFf64H1poDBQ"/>
   <Blocks:NestedConnectorEnd xmi:id="_qMBB4keWEeqFf64H1poDBQ" base_Element="_qMBB4UeWEeqFf64H1poDBQ" propertyPath="_sq69AEeFEeqFf64H1poDBQ" base_ConnectorEnd="_qMBB4UeWEeqFf64H1poDBQ"/>
+  <Requirements:Requirement xmi:id="_mWOsoEnGEeqwP8IJZx_mgg" base_NamedElement="_mWHX4EnGEeqwP8IJZx_mgg" id="FR5" text="As Emergency force I want to know all the possible information of the&#xD;&#xA;crash accident when the system order us to move at the car accident for&#xD;&#xA;ensure the security on the road, save trapped people or turn off a fire." base_Class="_mWHX4EnGEeqwP8IJZx_mgg"/>
+  <Requirements:Requirement xmi:id="_mszZkEnGEeqwP8IJZx_mgg" base_NamedElement="_msvvMEnGEeqwP8IJZx_mgg" id="NFR1" text="The system must be exact in the accident metrics like&#xD;&#xA;coordinates, and the devices and emergency corps in order to act in a faster way." base_Class="_msvvMEnGEeqwP8IJZx_mgg"/>
+  <Requirements:Requirement xmi:id="_nF7EMEnGEeqwP8IJZx_mgg" base_NamedElement="_nF2ywEnGEeqwP8IJZx_mgg" id="NFR11" text="The assistance to the patient is provided in the fastest way possible." base_Class="_nF2ywEnGEeqwP8IJZx_mgg"/>
+  <Requirements:Requirement xmi:id="_oKgtsEnGEeqwP8IJZx_mgg" base_NamedElement="_oKdqYEnGEeqwP8IJZx_mgg" id="NFR13" text="This emergency unit has to be able to adapt to different kinds of emergency situations." base_Class="_oKdqYEnGEeqwP8IJZx_mgg"/>
 </xmi:XMI>
